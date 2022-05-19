@@ -1,1 +1,1 @@
-web: gunicorn plugged-in-team.wsgi
+web: gunicorn backends.wsgi
