@@ -1,0 +1,27 @@
+{% load static %}
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'card-game.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Content Goes here -->
+<h1>card game page</h1>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
+
+
+{% block postload_js %}
+
+<script src="{% static 'games/card-game.js' %}">
+</script>
+{% endblock %}
