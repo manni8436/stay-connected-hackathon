@@ -23,7 +23,7 @@ urlpatterns = [
     path('dashboard/', views.get_group_dashboard, name='group_dashboard'),
     path('games/card_game/', views.get_card_game, name='card_game'),
     path(
-        'games/rock_paper_scizors/',
-        views.get_rock_paper_scizors,
-        name='rock_paper_scizors'),
+        'games/rock_paper_scissors/',
+        views.get_rock_paper_scissors,
+        name='rock_paper_scissors'),
 ]
