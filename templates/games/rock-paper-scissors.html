@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'rock-paper-scizors.css' %}">
+<link rel="stylesheet" href="{% static 'rock-paper-scissors.css' %}">
 {% endblock %}
 {% block content %}
 <!-- Content Goes here -->
@@ -17,8 +17,8 @@
         content='Lets get back to school and play one of our favourite games: Rock Paper Scissors Lizard Spock! Win against the computer by being the first to reach 5 points.'>
     <meta name='keywords' content='HTML, CSS, JavaScript, Game '>
     <meta name='author' content='Jack Conroy'>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="static/css/rock-paper-scizors.css">
+    <!-- Stylesheet 
+    <link rel="stylesheet" href="static/css/rock"> --> 
     <!-- Rock Paper Scissors icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/Rock-Paper-Scissors/apple-touch-icon180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/Rock-Paper-Scissors/32x32.png">
@@ -97,7 +97,7 @@
             </div>
         </section>
     </div>
-    <script src="static/js/rock-paper-scizors.js"></script>
+    <!--<script src="static/js/rock-paper-scizors.js"></script>-->
 </body>
 
 </html>
@@ -116,6 +116,6 @@
 
 {% block postload_js %}
 
-<script src="{% static 'games/rock-paper-scizors.js' %}">
+<script src="{% static 'games/rock-paper-scissors.js' %}">
 </script>
 {% endblock %}
