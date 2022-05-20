@@ -326,11 +326,11 @@ quizTimerRef = setInterval(function() {
         alert(`Oh no! You've run out of time. You scored ${score}/${maxQuestions}. Why not play again and see if you can finish the quiz!`);
         restartButton.classList.remove("hide");
         restartButton.onclick = function() {
-            location.href = "quiz-game.html";
+            location.href = "/games/quizanaughts/game";
         };
         homeButton.classList.remove("hide");
         homeButton.onclick = function() {
-            location.href = "quiz-game-menu.html";
+            location.href = "/games/quizanaughts/welcome";
         };
         nextButton.classList.add("hide");
         quizQuestions.classList.add("hide");
@@ -404,11 +404,11 @@ if (shuffledQuestions.length > currentQuestionIndex + 1) {
 } else {
     restartButton.classList.remove("hide");
     restartButton.onclick = function() {
-        location.href = "quiz-game.html";
+        location.href = "/games/quizanaughts/game";
     };
     homeButton.classList.remove("hide");
     homeButton.onclick = function() {
-        location.href = "quiz-game-menu.html";
+        location.href = "/games/quizanaughts/welcome";
     };
     clearInterval(quizTimerRef);
     endQuiz();
