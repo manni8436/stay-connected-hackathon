@@ -123,12 +123,12 @@ ul li::before {
 
 .controls {
     display: none; /* Hide controls by default */
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 0;
+    font-size: 1rem;
+    position: relative;
+    top: -7rem;
     left: 0;
     right: 0;
 }
@@ -257,7 +257,7 @@ ul li::before {
     }
 
     .controls {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .game-area {
