@@ -16,11 +16,11 @@ def get_group_dashboard(request):
     return render(request, 'group-dashboard.html')
 
 
-def get_rock_paper_scizors(request):
+def get_rock_paper_scissors(request):
     '''
     view to return rock paper scizors game page
     '''
-    return render(request, 'games/rock-paper-scizors.html')
+    return render(request, 'games/rock-paper-scissors.html')
 
 
 def get_card_game(request):
