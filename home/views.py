@@ -28,3 +28,19 @@ def get_card_game(request):
     view to return card game page
     '''
     return render(request, 'games/card-game.html')
+
+
+def get_quizanaughts_welcome(request):
+    '''
+    view to return the view to display welcome page wor quizanaughts
+    '''
+    return render(request, 'games/quiz-game-home.html')
+
+
+def get_quizanaughts_game(request):
+    '''
+    view to return the view to game page for quizanaughts
+    '''
+    return render(request, 'games/quiz-game.html')
+
+    
