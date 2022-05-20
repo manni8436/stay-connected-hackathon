@@ -1,15 +1,15 @@
 // Modal - Credit Florin Pop Youtube video guide, walkthrough helped create modal and code was used and modified for project
-const openModalButton = document.getElementById("open-modal-button");
-const howToModalContainer = document.getElementById("how-to-modal-container");
-const closeButtonInModal = document.getElementById("close");
+// const openModalButton = document.getElementById("open-modal-button");
+// const howToModalContainer = document.getElementById("how-to-modal-container");
+// const closeButtonInModal = document.getElementById("close");
 
-openModalButton.addEventListener("click", () => {
-    howToModalContainer.classList.add("show");
-});
+// openModalButton.addEventListener("click", () => {
+//     howToModalContainer.classList.add("show");
+// });
 
-closeButtonInModal.addEventListener("click", () => {
-    howToModalContainer.classList.remove("show");
-});
+// closeButtonInModal.addEventListener("click", () => {
+//     howToModalContainer.classList.remove("show");
+// });
 
 const startButton = document.getElementById("start-btn");
 // const contactUsButton = document.getElementById("contact-btn");
