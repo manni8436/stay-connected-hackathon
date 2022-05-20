@@ -23,7 +23,7 @@ const welcomeIntro = document.getElementById("welcome-intro");
 
 // Start Game - opens game.html page on click
 startButton.onclick = function() {
-    location.href = "quiz-game.html";
+    location.href = "/games/quizanaughts/game";
 };
 
 // Intro text for quiz
