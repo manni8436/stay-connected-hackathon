@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'rock-paper-scissors.css' %}">
+<link rel="stylesheet" href="{% static '/css/rock-paper-scissors.css' %}">
 {% endblock %}
 {% block content %}
 <!-- Content Goes here -->
-<h1>rock paper scizors</h1>
+<h1>Rock Paper Scissors</h1>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name='description'
-        content='Lets get back to school and play one of our favourite games: Rock Paper Scissors Lizard Spock! Win against the computer by being the first to reach 5 points.'>
+        content='Lets get back to school and play one of our favourite games: Rock Paper Scissors! Win against the computer by being the first to reach 5 points.'>
     <meta name='keywords' content='HTML, CSS, JavaScript, Game '>
     <meta name='author' content='Jack Conroy'>
     <!-- Stylesheet 
@@ -23,13 +23,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/Rock-Paper-Scissors/apple-touch-icon180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/Rock-Paper-Scissors/32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/Rock-Paper-Scissors/16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Rock-Paper-Scissors/android-chrome-192x192.png.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Rock-Paper-Scissors/android-chrome-512x512.png.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Rock-Paper-Scissors/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/Rock-Paper-Scissors/android-chrome-512x512.png">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>Rock Paper Scissors Lizard Spock</title>
+    <title>Rock Paper Scissors Spock</title>
 </head>
 
 <body>
@@ -87,7 +87,7 @@
                     <i id="computer-icon" class="fas fa-question"></i>
                 </div>
             </div>
-        <div class="div-wrapper"><img src="./assets/Rock-Paper-Scissors/android-chrome-192x192.png.png" alt="rockpaperscissors"></div>
+        <div class="div-wrapper"><img src="./assets/Rock-Paper-Scissors/android-chrome-192x192.png" alt="rockpaperscissors"></div>
             <div class="winner-modal">
                 <div class="modal-content">
                     <span class="close"><i class="fas fa-times"></i></span>
@@ -116,6 +116,6 @@
 
 {% block postload_js %}
 
-<script src="{% static 'games/rock-paper-scissors.js' %}">
+<script src="{% static '/js/rock-paper-scissors.js' %}">
 </script>
 {% endblock %}
