@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static '/css/quiz-game.css' %}">
+{% endblock %}
+
+{% block content %}
+<!-- Content Goes here -->
+
+    <!-- Quiz title -->
+    <div>
+        <header>
+            <h1>Quizanaughts!</h1>
+        </header>
+        <!-- Quiz questions and answers -->
+        <div class="quiz-container">
+            <div id="welcome">
+                <h2 id="welcome-heading">Are you ready space adventurers?</h2>
+                <p id="welcome-intro"></p>
+            </div>
+            <div class="menu-controls">
+                <button aria-label="Begin Quiz" id="start-btn" class="homepage-btn btn">Begin Quiz</button>
+                <button aria-label="How To Play" id="open-modal-button" class="btn modal-btn">How To Play</button>
+                <button aria-label="Contact Us" id="contact-btn" class="btn">Contact Us</button>
+            </div>
+            <!-- Modal Pop-up - Credit Florin Pop Youtube video guide. Walkthrough helped create modal and code was used and modified for project.  */-->
+            <div class="modal-container" id="how-to-modal-container">
+                <div class="modal">
+                    <h2>Game Rules</h2>
+                    <p>
+                        Get ready Quizanaughts for a fun filled quiz all about space. Simply click on the question you think is right and test your space knowledge. The more questions you get right the more points you gain. Get yourself
+                        ready and blast off into space to find the answers you've been looking for.
+                    </p>
+                    <button aria-label="Close Modal" id="close" class="btn">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
+
+
+{% block postload_js %}
+
+<script src="{% static '/js/quiz-game-menu.js' %}"></script>
+{% endblock %}
