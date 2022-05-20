@@ -22,8 +22,10 @@ urlpatterns = [
     path('', views.get_index, name='home'),
     path('dashboard/', views.get_group_dashboard, name='group_dashboard'),
     path('games/card_game/', views.get_card_game, name='card_game'),
-    path(
-        'games/rock_paper_scissors/',
-        views.get_rock_paper_scissors,
-        name='rock_paper_scissors'),
+    path('games/rock_paper_scissors/', views.get_rock_paper_scissors,
+         name='rock_paper_scissors'),
+    path('games/quizanaughts/welcome', views.get_quizanaughts_welcome,
+         name='quizanaughts_welcome'),
+    path('games/quizanaughts/game', views.get_quizanaughts_game,
+         name='quizanaughts_game'),
 ]
