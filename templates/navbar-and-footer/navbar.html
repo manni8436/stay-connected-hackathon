@@ -12,34 +12,29 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'group_dashboard' %}">Group dashboard</a>
           </li>
-          <li>
-            <a class="nav-link dropdown-toggle" id="dropdownGames" data-bs-toggle="dropdown" aria-expanded="false">Games</a>
-          <ul class="dropdown-menu text-small" aria-labelledby="dropdownGames">
-              <li>
-                <a class="nav-link" href="{% url 'card_game' %}">Card Game</a>
-              </li>
-              <li>
-                <a class="nav-link" href="{% url 'rock_paper_scissors' %}">Rock Paper Scissors</a>
-              </li>
-              <li>
-                <a class="nav-link" href="{% url 'quizanaughts_welcome' %}">Quizanaughts welcome</a>
-              </li>
-             
-              <li>
-                <a class="nav-link" href="{% url 'quizanaughts_game' %}">Quizanaughts game</a>
-              </li>
-              <li>
-                <a class="nav-link" href="{% url 'canvas_art' %}">Canvas Art</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'game_5' %}">Game 5</a>
-              </li>   
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'game_6' %}">Game 6</a>
-              </li>
-            </ul>
-          </li>
 
+          <li>
+            <a class="nav-link" href="{% url 'card_game' %}">Card Game</a>
+          </li>
+          <li>
+            <a class="nav-link" href="{% url 'rock_paper_scissors' %}">Rock Paper Scissors</a>
+          </li>
+          <li>
+            <a class="nav-link" href="{% url 'quizanaughts_welcome' %}">Quizanaughts welcome</a>
+          </li>
+          
+          <li>
+            <a class="nav-link" href="{% url 'quizanaughts_game' %}">Quizanaughts game</a>
+          </li>
+          <li>
+            <a class="nav-link" href="{% url 'canvas_art' %}">Canvas Art</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'game_5' %}">Game 5</a>
+          </li>   
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'game_6' %}">Game 6</a>
+          </li>
           {% if user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
