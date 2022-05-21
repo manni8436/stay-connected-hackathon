@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #FEC5E5;
+    background-color: #ffb8d2;
     color: #000;
     font-family: "Lobster", sans-serif;
     text-align: center;
@@ -36,22 +36,22 @@ html {
 .icons {
     margin-bottom: 2rem;
     animation: fadeIn ease 3s;
-    color:#FFF
+    color:#000
 }
 
 .fa-hand-rock {
-    background-color: #ff00c8;
+    background-color: #b7fdda;
     border-radius: 100%;
     padding: 5px;
 }
 .fa-hand-paper {
-    background-color: #ff00c8;
+    background-color: #fff5cc;
     border-radius: 100%;
     padding: 5px;
 }
 
 .fa-hand-scissors {
-    background-color: #ff00c8;
+    background-color: #cea4e4;
     border-radius: 100%;
     padding: 5px;
 }
@@ -90,12 +90,12 @@ ul li::before {
 
 #start:hover {
     background-color: #FFF;
-    color: #FEC5E5;
+    color: #ffb8d2;
 }
 
 #start {
     background-color: #FFF;
-    color: #FEC5E5;
+    color: #ffb8d2;
     width: 10%;
     font-family: "Lobster", sans-serif;
 }
@@ -212,7 +212,7 @@ ul li::before {
 
 .modal-content {
     position: relative;
-    background-color: #ff00c8;
+    background-color: #b7fdda;
     text-align: center;
     color: black;
     margin: 15% auto; 
@@ -231,7 +231,7 @@ ul li::before {
 }
   
 .close:hover {
-    color: #f1d68b;
+    color: #fff5cc;
     cursor: pointer;
 }
 
