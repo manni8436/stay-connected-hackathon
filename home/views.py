@@ -43,4 +43,23 @@ def get_quizanaughts_game(request):
     '''
     return render(request, 'games/quiz-game.html')
 
-    
+
+def get_canvas_art(request):
+    '''
+    view to return canvas art game
+    '''
+    return render(request, 'games/canvas-art.html')
+
+
+def get_game_5(request):
+    '''
+    view to return game 5
+    '''
+    return render(request, 'games/game-5.html') 
+
+
+def get_game_6(request):
+    '''
+    view to return game 6
+    '''
+    return render(request, 'games/game-6.html')

@@ -28,4 +28,7 @@ urlpatterns = [
          name='quizanaughts_welcome'),
     path('games/quizanaughts/game', views.get_quizanaughts_game,
          name='quizanaughts_game'),
+    path('games/canvas_art/', views.get_canvas_art, name='canvas_art'),
+    path('games/game_5/', views.get_game_5, name='game_5'),
+    path('games/game_6/', views.get_game_6, name='game_6'),
 ]
