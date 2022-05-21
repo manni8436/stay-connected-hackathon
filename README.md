@@ -522,6 +522,8 @@ class MediaStorage(S3Boto3Storage):
 * [icon](https://www.flaticon.com/free-icons/trees)
 * png to svg [converter](https://convertio.co/download/d39aa7f30e79f4379b9bce697c5afe384b5853/)
 * resizing photos by [photoresizer](https://www.photoresizer.com/)
+* [Tetris Game by Rosetta Code](https://rosettacode.org/wiki/Tetris/JavaScript)
+* [Ping Pong Game By Code Explained](https://www.youtube.com/watch?v=nl0KXCa5pJk)
 
 ### Tutorials and inspiration
 
