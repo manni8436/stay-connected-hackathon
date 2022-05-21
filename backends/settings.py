@@ -75,12 +75,14 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'backends.urls'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            TEMPLATES_DIR
-            # os.path.join(BASE_DIR, 'templates', 'allauth'),
+            TEMPLATES_DIR,
+            os.path.join(BASE_DIR, 'templates', 'allauth'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
