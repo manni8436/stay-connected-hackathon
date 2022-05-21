@@ -29,12 +29,12 @@
     {% endblock %}
     {% block extra_js %}
     {% endblock %}
-    <title>??? Change title
+    <title>Plugged-in
     </title> 
   </head>
   <body class="d-flex flex-column h-100">
     <!-- navbar from navbar folder -->
-    {% include 'navbar/navbar.html' %}
+    {% include 'navbar-and-footer/navbar.html' %}
       
     <main>
       <div  class="flex-shrink-0">
@@ -43,19 +43,8 @@
       {% endblock content %}
       </div>
     </main>
-    <!--Footer-->
-    <footer class="footer mt-auto py-3 bg-warning">
-      <div class="container text-center">
-        <span class="text-black">Copyright ??? udate footer
-          <a class="fw-bold text-dark my-heading-font" href="#">GitHub
-          </a>
-          and 
-          <a class="fw-bold text-dark my-heading-font" href="#">Linkedin
-          </a>
-        </span>
-      </div>
-    </footer>
 
+    {% include 'navbar-and-footer/footer.html' %}
 
     <!-- This allows us to extend the footer and add different scripts for each page -->
     {% block postload_js %}
