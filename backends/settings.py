@@ -32,11 +32,16 @@ DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 DEBUG = DEVELOPMENT
 
 # TODO please remove heroku app from development when finished project
-if DEVELOPMENT:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
-else:
-    ALLOWED_HOSTS = ["plugged-in1.herokuapp.com"]
+# if DEVELOPMENT:
+#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
+# else:
+#     ALLOWED_HOSTS = ["plugged-in1.herokuapp.com"]
 
+
+if DEVELOPMENT:
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in-team.herokuapp.com"]
+else:
+    ALLOWED_HOSTS = ["plugged-in-team.herokuapp.com"]
 
 # Application definition
 
@@ -100,7 +105,7 @@ TEMPLATES = [
     },
 ]
 
-# MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
