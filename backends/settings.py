@@ -33,9 +33,9 @@ DEBUG = DEVELOPMENT
 
 # TODO please remove heroku app from development when finished project
 if DEVELOPMENT:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in-team.herokuapp.com"]
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
 else:
-    ALLOWED_HOSTS = ["plugged-in-team.herokuapp.com"]
+    ALLOWED_HOSTS = ["plugged-in1.herokuapp.com"]
 
 
 # Application definition
