@@ -87,7 +87,7 @@ The Footer has been used to dispaly copyright information on behalf of the Plugg
 
 
 ### Home - landing page
-The Homepage features a carasole, dispalying all the games on Plugged-in to the user. 
+The Homepage features a carousel, dispalying all the games on Plugged-in to the user. 
 
 ![Homepage](README_files/homepage.png)
 
