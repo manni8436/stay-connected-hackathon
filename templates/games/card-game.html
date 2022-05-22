@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static '/css/card-game.css' %}">
+    <link rel="stylesheet" href="{% static 'css/card-game.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -19,8 +19,7 @@
             <div class="instructions">
                 <h4 class="instructions-header">how to play!</h4>
                 <p>Once you are ready to play the game, choose two cards and if they match then you will get a point.
-                    you can get a total of 8 points
-                    on easy level, 10 points on medium level and 12 points on hard level.
+                    game completes when you find all cards. Try to accomplish this in as little moves as possible.
                 </p>
             </div>
         </div>
@@ -120,7 +119,7 @@
             <div id="score">0 / 10 </div>
         </div>
         <div class="col-sm-1 col-md-1 col-lg-1 text-center">
-            <button type="button" class="btn reset" id="reset">reset</button>
+            <div type="button" class="btn reset" id="reset">reset</div>
         </div>
     </div>
 </div>
@@ -132,11 +131,18 @@
     <div class="modal-content">
         <p>you have found all the cards!, Would you like to play again?</p>
     </div>
-    <button type="button" class="modal-close-button" id="close">close</button>
-    <button type="button" class="modal-replay-button" id="replay">replay</button>
+    <form action="{% url 'card_game' %}" method="POST">
+    {% csrf_token %}
+        <input type="hidden" name="moves" id="moves">
+        <input type="hidden" name="level" value="easy" id="level">
+        <input type="hidden" name="team" value="unknown_team">
+        <button type="button" class="modal-close-button" id="close">close</button>
+        <button type="button" class="modal-replay-button" id="replay">replay</button>
+        <button type="submit" class="modal-submit-button" >scores</button>
+    
+    </form>
 </div>
 
-<script src="assets/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
 </script>
@@ -150,10 +156,10 @@
 
 </html>
 
-{% endblock content %}
+{% endblock %}
 
 
 {% block postload_js %}
 
-<script src="{% static '/js/card-game.js' %}"></script>
+<script src="{% static 'js/card-game.js' %}"></script>
 {% endblock %}

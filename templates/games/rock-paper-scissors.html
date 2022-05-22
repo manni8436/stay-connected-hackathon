@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-<link rel="stylesheet" href="{% static '/css/rock-paper-scissors.css' %}">
+<link rel="stylesheet" href="{% static 'css/rock-paper-scissors.css' %}">
 {% endblock %}
 {% block content %}
 <!-- Content Goes here -->
@@ -59,7 +59,7 @@
                     <i id="computer-icon" class="fas fa-question"></i>
                 </div>
             </div>
-            <button id="start" class="btn home">Back to Rules</button>
+            <button id="start" class="home">Back to Rules</button>
             <div class="winner-modal">
                 <div class="modal-content">
                     <span class="close"><i class="fas fa-times"></i></span>
@@ -69,11 +69,11 @@
             </div>
         </section>
     </div>
-{% endblock content %}
+{% endblock %}
 
 
 {% block postload_js %}
 
-<script src="{% static '/js/rock-paper-scissors.js' %}">
+<script src="{% static 'js/rock-paper-scissors.js' %}">
 </script>
 {% endblock %}

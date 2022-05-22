@@ -4,8 +4,8 @@ DON'T FORGET TO GENERATE THE TABLE OF CONTENT -
 
 
 
-
-# Plugged-in
+# HACKATHON MAY 2022: GETTING CONNECTED
+# Plugged-in Application
 
 [![showpiece home page](README_files)](https://?????.herokuapp.com/)
 
@@ -14,49 +14,61 @@ Click [here](https://????.herokuapp.com/) to live site.
 
 ## UX
 
+UX Design is a process that can be used to design anything from products to bicycles to mobile applications. The focus of this design process puts the users' needs first--making their interaction with the application a pleasureable one.
 
+Flexibility and efficiency of use
+The apllication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+
+Aesthetic and minimalist design
+The application does not contain irrelevant or rarely needed information, following a minimal design with pastel colours to make the aesthetic experience playful. The user has clear visibility of the application's information and usage.
 
 ## Purpose
 
-The app aims to allow family members to play simple javascript games and compete within the group.
-Get more people plugged in to your group to have bigger competition in the games' score boards.
+[Code Institute](https://codeinstitute.net/se/) and [Trust in SODA](https://www.trustinsoda.com/) collaboratively organised the May Hackathon 2022 - "GETTING CONNECTED". The theme of the Hackathon was to highlight the importance of 'staying connected' with solutions to help people connect virtually for a more connected world.
+
+Plugged-in aims to 'stay connected' with friends and family members by playing simple javascript games and competing within the group.
+Get more people plugged into your group, play more games, to have immense competition on the games' scoreboards. 
 
 ## User Stories
 
 ### User Stories that have been satisfied by creation of particular apps in ths project:
 
-| id  |  content | how was it satisfied
+| id  |  content |
 | ------ | ------ | ------ |
-|  [#1](https://github.com/JoGorska/bonsai-shop/issues/1) | As a Shopper I can register as a user and have ability to login so that my personal data is saved for future shopping | profile |
+| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
 
 
 ### User stories that are planned for next sprint
 
 | id  |  content | 
 | ------ | ------ |
-|  [#34](https://github.com/JoGorska/bonsai-shop/issues/34) | As a shopper I can have my address auto filled after I typed my postcode so that I don't have to type all address manually |
+| As a Player, I can play co-op games with family and friends and score up together |
 
 
 ## Wireframes 
 
-The general structure of the page was based on 1/3 proportions in many of it's features. Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).
+Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB). This provided us a rough starting point to establish what we were going to put into the project and the direction to take. The end result has evolved multiple times from this inital concept.
 
-The whole of design has been saved in this [pdf file](????). 
+- [Homepage - Desktop](/README_files/homepage-desktop.png)
+- [Homepage - Tablet](/README_files/homepage-tablet.png)
+- [Homepage - Mobile](/README_files/homepage-mobile.png)
 
+- [Game Page - Desktop](/README_files/game-page-desktop.png)
+- [Game Page - Tablet](/README_files/game-page-tablet.png)
+- [Game Page - Mobile](/README_files/game-page-mobile.png)
+
+- [Homepage - Desktop](/README_files/connect-with-us-desktop.png)
+- [Homepage - Tablet](/README_files/connect-with-us-tablet.png)
+- [Homepage - Mobile](/README_files/connect-with-us-mobile.png)
 
 ## Agile Methodology
 
-### Canban board and issues
+### Kanban board and issues
 
-![Screenshot of the canban board](README_files/???)
-
-
-Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](???). The issues are currently in two categories - done or for the next relese. 
-
-The issues were than closed automaticaly when the pull request was linked to the issue. 
+![Screenshot of the kanban board](README_files/kanban-board.png)
 
 
-
+Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/manni8436/stay-connected-hackathon/issues).
 
 
 ## Existing Features
