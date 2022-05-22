@@ -175,23 +175,17 @@ Due to extensive user of Bottstrap classes, only minimial styling was applied. M
 
 ### JavaScript validation
 
-Javascript code validation was complited on [jshint](https://jshint.com/)
-Initialy it was returning errors in relation of ES6 syntax, which was resolved by adding this line to the beggining of the file
-```
-/*jshint esversion: 6*/
-```
+Javascript code validation was complied on [jshint](https://jshint.com/)
 
-Second issue with jshint was that it wasn't recognizing syntax of JQuery. This was resolved by adding the below code:
-```
-/*globals $:false */
-```
-Most of the results came with no errors except of stripe_element.js It has returned that Stripe is undefined. This is due to core functionality reffering to Stripe. Copy of the code was taken from older version Stripe pages that were referenced in Butique Ado.
+None of the games returned any errors. See below for details.
 
 | App  |  file | result |
 | ------ | ------ | ------ |
-|  games | card_game | [no errors](README_files/???) |
-|  games | next_game | [no errors](README_files/???) |
-
+|  games | card-game | [no errors](README_files/jslint-card-game.png) |
+|  games | rock-paper-scissors | [no errors](README_files/jslint-rock-paper-scissors.png) |
+|  games | quiz-game | [no errors](README_files/jslint-quiz-game.png) |
+|  games | game-5 | [no errors](README_files/jslint-game5.png) |
+|  games | game-6 | [no errors](README_files/jslint-game6.png) |
 
 ### Python beautify
 All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Than the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
