@@ -7,9 +7,9 @@ class CardGameScoreAdmin(admin.ModelAdmin):
     '''
     class enabling admin see the scores for card game
     '''
-    list_display = ('user', 'level', 'moves',)
-    search_fields = ['user', 'level']
-    list_filter = ('user', 'level')
+    list_display = ('player', 'level', 'moves',)
+    search_fields = ['player', 'level']
+    list_filter = ('player', 'level')
 
 
 admin.site.register(CardGameScore)

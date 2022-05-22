@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.views import generic, View
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
+from .forms import CardGameForm
 
 
 class CardGameView(CreateView):
@@ -18,14 +19,14 @@ class CardGameView(CreateView):
         return render(request, self.template_name)
 
     def post(self, request, *args, **kwargs):
+        form = CardGameForm(request.POST or None, request.FILES or None)
+        form.instance.player = request.user
 
+        if form.is_valid():
+            new_score = form.save()
 
-        if traffic_msg_form.is_valid():
-            traffic_msg_form.instance.author_id = request.user.id
-            traffic_msg_form.instance.status = 1
-
-            traffic_message = traffic_msg_form.save(commit=False)
-            traffic_message.save()
+            print(f'NEW SCORE {new_score}')
+            return HttpResponseRedirect('/')
 
         else:
             return HttpResponseRedirect('/')
