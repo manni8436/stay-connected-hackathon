@@ -1,63 +1,73 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static '/css/quiz-game.css' %}">
+<link rel="stylesheet" href="{% static '/css/quiz-game.css' %}">
 {% endblock %}
-
 {% block content %}
 <!-- Content Goes here -->
-
-    <!-- Quiz title -->
-    <div>
-        <header>
-            <h1>Quizanaughts!</h1>
-        </header>
-        <!-- Score tracking and question counter area -->
-        <div class="score-tracking">
-            <p class="scores" id="question-counter">Question</p>
-            <p class="scores" id="score-tally">Score</p>
-        </div>
-        <!-- Progress bar -->
-        <div class="flexbox">
-            <div id="outer-progress-bar">
-                <div id="inner-progress-bar"></div>
-            </div>
-            <!-- Countdown timer -->
-            <div id="timer"></div>
-        </div>
-        <!-- Quiz questions and answers -->
-        <div class="quiz-container">
-            <div class="quiz-area">
-                <div id="quiz-questions">
-                    <div id="question">Question</div>
-                    <div id="answer-buttons" class="btn-grid">
-                        <button aria-label="Answer 1" class="btn">Answer 1</button>
-                        <button aria-label="Answer 2" class="btn">Answer 2</button>
-                        <button aria-label="Answer 3" class="btn">Answer 3</button>
-                        <button aria-label="Answer 4" class="btn">Answer 4</button>
-                    </div>
-                </div>
-            </div>
-            <!-- Outro Text -->
-            <div id="outro-container" class="hide">
-                <h2 id="congratulations-heading">Congratulations</h2>
-                <p id="outro-text"></p>
-            </div>
-            <!-- Controls area -->
-            <div class="quiz-control">
-                <button aria-label="Next" id="next-btn" class="quiz-btn btn hide">Next</button>
-                <button aria-label="Home" id="home-btn" class="quiz-btn btn hide">Home</button>
-            </div>
-            <div class="menu-controls">
-                <button aria-label="Play Again" id="restart-btn" class="homepage-btn btn hide">Play Again</button>
-            </div>
-        </div>
+<!-- Quiz title -->
+<div>
+  <header>
+    <h1>Quizanaughts!
+    </h1>
+  </header>
+  <!-- Score tracking and question counter area -->
+  <div class="score-tracking">
+    <p class="scores" id="question-counter">Question
+    </p>
+    <p class="scores" id="score-tally">Score
+    </p>
+  </div>
+  <!-- Progress bar -->
+  <div class="flexbox">
+    <div id="outer-progress-bar">
+      <div id="inner-progress-bar">
+      </div>
     </div>
-
+    <!-- Countdown timer -->
+    <div id="timer">
+    </div>
+  </div>
+  <!-- Quiz questions and answers -->
+  <div class="quiz-container">
+    <div class="quiz-area">
+      <div id="quiz-questions">
+        <div id="question">Question
+        </div>
+        <div id="answer-buttons" class="btn-grid">
+          <button aria-label="Answer 1" class="btn">Answer 1
+          </button>
+          <button aria-label="Answer 2" class="btn">Answer 2
+          </button>
+          <button aria-label="Answer 3" class="btn">Answer 3
+          </button>
+          <button aria-label="Answer 4" class="btn">Answer 4
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Outro Text -->
+    <div id="outro-container" class="hide">
+      <h2 id="congratulations-heading">Congratulations
+      </h2>
+      <p id="outro-text">
+      </p>
+    </div>
+    <!-- Controls area -->
+    <div class="quiz-control">
+      <button aria-label="Next" id="next-btn" class="quiz-btn btn hide">Next
+      </button>
+      <button aria-label="Home" id="home-btn" class="quiz-btn btn hide">Home
+      </button>
+    </div>
+    <div class="menu-controls">
+      <button aria-label="Play Again" id="restart-btn" class="homepage-btn btn hide">Play Again
+      </button>
+    </div>
+  </div>
+</div>
 {% endblock content %}
-
-
 {% block postload_js %}
-
-<script src="{% static '/js/quiz-game.js' %}"></script>
+<script src="{% static '/js/quiz-game.js' %}">
+</script>
 {% endblock %}

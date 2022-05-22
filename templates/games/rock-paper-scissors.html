@@ -5,75 +5,105 @@
 {% endblock %}
 {% block content %}
 <!-- Content Goes here -->
-<h1>Rock Paper Scissors</h1>
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <title>Rock Paper Scissors</title>
-    <i id="audio" class="fas fa-volume-up"> </i>
-
-    <section id="homepage">
-        <h1>Ready To Play?</h1>
-        <div class="icons">
-            <i class="far fa-hand-rock"></i>
-            <i class="far fa-hand-paper"></i>
-            <i class="far fa-hand-scissors"></i>
-        </div>
-        
-        <div class="how-to-play">
-            <h2>How To Play:</h2>
-            <ul id="rules" class="fa-ul">
-                <li><i class="fa-solid fa-circle-star"></i> Choose your item to confront the computer.</li>
-                <li><i class="fa-solid fa-circle-star"></i> The Rock strikes Scissors.</li>
-                <li><i class="fa-solid fa-circle-star"></i> The Paper strikes Rock.</li>
-                <li><i class="fa-solid fa-circle-star"></i> The Scissors strikes paper.</li>
-            </ul>
-        </div>
-        <button id="start" class="btn">Start</button>
-    </section>
-
-    <!-- Game Page-->
-    <div id="gamepage">
-        <section class="game-area">
-            <div class="round-result">
-                <!-- placeholder text -->
-                <span id="round-text"></span>
-            </div>
-            <div class="players">
-                <div class="player">
-                    <h2>You</h2>
-                    <span class="score">0</span>
-                    <p>Choose your item:</p>
-                    <div class="choices">
-                        <i id="rock" class="far fa-hand-rock choice"></i>
-                        <i id="paper" class="far fa-hand-paper choice"></i>
-                        <i id="scissors" class="far fa-hand-scissors choice"></i>
-                    </div>
-                </div>
-                <div class="computer">
-                    <h2>The Computer</h2>
-                    <span class="comp-score">0</span>
-                    <p>The computer go for:</p>
-                    <!-- placeholder choice -->
-                    <i id="computer-icon" class="fas fa-question"></i>
-                </div>
-            </div>
-            <button id="start" class="home">Back to Rules</button>
-            <div class="winner-modal">
-                <div class="modal-content">
-                    <span class="close"><i class="fas fa-times"></i></span>
-                    <h3 class="modal-header">Set dynamically</h3>
-                    <p class="modal-result">Set dynamically</p>
-                </div>
-            </div>
-        </section>
+<h1>Rock Paper Scissors
+</h1>
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<title>Rock Paper Scissors
+</title>
+<section id="homepage">
+  <h1>Ready To Play?
+  </h1>
+  <div class="icons">
+    <i class="far fa-hand-rock">
+    </i>
+    <i class="far fa-hand-paper">
+    </i>
+    <i class="far fa-hand-scissors">
+    </i>
+  </div>
+  <div class="how-to-play">
+    <h2>How To Play:
+    </h2>
+    <ul id="rules" class="fa-ul">
+      <li>
+        <i class="fa-solid fa-circle-star">
+        </i> Choose your item to confront the computer.
+      </li>
+      <li>
+        <i class="fa-solid fa-circle-star">
+        </i> The Rock strikes Scissors.
+      </li>
+      <li>
+        <i class="fa-solid fa-circle-star">
+        </i> The Paper strikes Rock.
+      </li>
+      <li>
+        <i class="fa-solid fa-circle-star">
+        </i> The Scissors strikes paper.
+      </li>
+    </ul>
+  </div>
+  <button id="start" class="btn">Start
+  </button>
+</section>
+<!-- Game Page-->
+<div id="gamepage">
+  <section class="game-area">
+    <div class="round-result">
+      <!-- placeholder text -->
+      <span id="round-text">
+      </span>
     </div>
+    <div class="players">
+      <div class="player">
+        <h2>You
+        </h2>
+        <span class="score">0
+        </span>
+        <p>Choose your item:
+        </p>
+        <div class="choices">
+          <i id="rock" class="far fa-hand-rock choice">
+          </i>
+          <i id="paper" class="far fa-hand-paper choice">
+          </i>
+          <i id="scissors" class="far fa-hand-scissors choice">
+          </i>
+        </div>
+      </div>
+      <div class="computer">
+        <h2>The Computer
+        </h2>
+        <span class="comp-score">0
+        </span>
+        <p>The computer go for:
+        </p>
+        <!-- placeholder choice -->
+        <i id="computer-icon" class="fas fa-question">
+        </i>
+      </div>
+    </div>
+    <button id="start" class="home">Back to Rules
+    </button>
+    <div class="winner-modal">
+      <div class="modal-content">
+        <span class="close">
+          <i class="fas fa-times">
+          </i>
+        </span>
+        <h3 class="modal-header">Set dynamically
+        </h3>
+        <p class="modal-result">Set dynamically
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+<!--<script src="static/js/rock-paper-scizors.js"></script>-->
 {% endblock content %}
-
-
 {% block postload_js %}
-
 <script src="{% static '/js/rock-paper-scissors.js' %}">
 </script>
 {% endblock %}
