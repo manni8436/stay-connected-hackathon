@@ -25,8 +25,9 @@ urlpatterns = [
     path('', views.get_index, name='home'),
     path('accounts/', include('allauth.urls')),
     path('profile/', include('profiles.urls')),
+    path('', include('scores.urls')),
     path('dashboard/', views.get_group_dashboard, name='group_dashboard'),
-    path('games/card_game/', views.get_card_game, name='card_game'),
+
     path('games/rock_paper_scissors/', views.get_rock_paper_scissors,
          name='rock_paper_scissors'),
     path('games/quizanaughts/welcome', views.get_quizanaughts_welcome,
@@ -34,7 +35,7 @@ urlpatterns = [
     path('games/quizanaughts/game', views.get_quizanaughts_game,
          name='quizanaughts_game'),
     path('games/canvas_art/', views.get_canvas_art, name='canvas_art'),
-    path('games/game_5/', views.get_game_5, name='game_5'),
-    path('games/game_6/', views.get_game_6, name='game_6'),
+    path('games/ping_pong/', views.get_ping_pong, name='ping_pong'),
+    path('games/tetris/', views.get_tetris, name='tetris'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

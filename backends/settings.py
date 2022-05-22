@@ -32,17 +32,17 @@ DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 DEBUG = DEVELOPMENT
 
-# TODO please uncomment Manni's settings, before pushing
-# if DEVELOPMENT:
-#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
-# else:
-#     ALLOWED_HOSTS = ["plugged-in1.herokuapp.com"]
-
-
+# TODO Manni's settings
 if DEVELOPMENT:
-    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in-team.herokuapp.com"]
+    ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
 else:
-    ALLOWED_HOSTS = ["plugged-in-team.herokuapp.com"]
+    ALLOWED_HOSTS = ["plugged-in1.herokuapp.com"]
+
+
+# if DEVELOPMENT:
+#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in-team.herokuapp.com"]
+# else:
+#     ALLOWED_HOSTS = ["plugged-in-team.herokuapp.com"]
 
 # Application definition
 
@@ -64,6 +64,7 @@ INSTALLED_APPS = [
     # our apps
     'home',
     'profiles',
+    'scores',
 
     # other apps
     'crispy_forms',
