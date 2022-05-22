@@ -82,7 +82,7 @@ The Footer has been used to dispaly copyright information on behalf of the Plugg
 
 
 ### Home - landing page
-The Homepage features a carasole, dispalying all the games on Plugged-in to the user. 
+The Homepage features a carasole, dispalying all the games on Plugged-in to the user. The user can easily navigate between the different games using the carasole. For each section of the carasole, there is a button linking to the displayed game. This gives the user another method for accessing the different games and another way to navigate between them. There are also titles for each game and a small description for what each game is. All of these features make the users experience more engaging, they have multiple ways of accessing the sites content. When they first access the site they are immediately drawn into the site main content. ready to play and have fun. 
 
  
 ### Profile
