@@ -250,6 +250,14 @@ textarea {
         line-height: normal;
     }
 
+    #welcome-intro {
+        font-size: 14px;
+    }
+
+    #welcome {
+        width: fit-content;
+    }
+
     .score-tracking,
     .flexbox {
         justify-content: space-around;
