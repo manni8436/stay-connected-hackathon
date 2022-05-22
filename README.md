@@ -18,7 +18,7 @@ UX Design is a process that can be used to design anything from products to bicy
 
 #### Flexibility and efficiency of use
 
-The apllication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+The aplication allow the users to tailor frequent actions by providing a simple and user friendly experience.
 
 #### Aesthetic and minimalist design
 
@@ -49,24 +49,28 @@ Get more people plugged into your group, play more games, to have immense compet
 
 ## Wireframes 
 
-The general structure of the page was based on 1/3 proportions in many of it's features. Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).
+Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB). This provided us a rough starting point to establish what we were going to put into the project and the direction to take. The end result has evolved multiple times from this inital concept.
 
-The whole of design has been saved in this [pdf file](????). 
+- [Homepage - Desktop](/README_files/homepage-desktop.png)
+- [Homepage - Tablet](/README_files/homepage-tablet.png)
+- [Homepage - Mobile](/README_files/homepage-mobile.png)
 
+- [Game Page - Desktop](/README_files/game-page-desktop.png)
+- [Game Page - Tablet](/README_files/game-page-tablet.png)
+- [Game Page - Mobile](/README_files/game-page-mobile.png)
+
+- [Homepage - Desktop](/README_files/connect-with-us-desktop.png)
+- [Homepage - Tablet](/README_files/connect-with-us-tablet.png)
+- [Homepage - Mobile](/README_files/connect-with-us-mobile.png)
 
 ## Agile Methodology
 
-### Canban board and issues
+### Kanban board and issues
 
-![Screenshot of the canban board](README_files/???)
-
-
-Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](???). The issues are currently in two categories - done or for the next relese. 
-
-The issues were than closed automaticaly when the pull request was linked to the issue. 
+![Screenshot of the kanban board](README_files/kanban-board.png)
 
 
-
+Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/manni8436/stay-connected-hackathon/issues).
 
 
 ## Existing Features
@@ -163,12 +167,15 @@ write how the app can be expanded
 
 ### CSS validation
 
-Due to extensive user of Bottstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from bootstrap's carousele template with some modifications. 
+Due to extensive user of Bootstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from Bootstrap's carousel template with some modifications. 
 The styling to the games was created with CSS code. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
 
-| App  |  CSS Games | Result |
-| ------ | ------ | ------ |
-|  Home | All | [No errors](README_files/CSS_Validator.png) |
+| App  |  CSS Pages | Result |
+| -----| -----------| ------ |
+| Home |   base.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   card-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   quiz-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |rock-paper-scissors.css | [No errors](README_files/CSS_Validator.png) |
 
 
 

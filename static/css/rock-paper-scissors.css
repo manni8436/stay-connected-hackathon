@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #ffb8d2;
+    background-color: #FEC5E5;
     color: #000;
     font-family: "Lobster", sans-serif;
     text-align: center;
@@ -36,22 +36,23 @@ html {
 .icons {
     margin-bottom: 2rem;
     animation: fadeIn ease 3s;
-    color:#000
+    color: #FFF
 }
 
 .fa-hand-rock {
-    background-color: #b7fdda;
+    background-color: #ff00c8;
     border-radius: 100%;
     padding: 5px;
 }
+
 .fa-hand-paper {
-    background-color: #fff5cc;
+    background-color: #ff00c8;
     border-radius: 100%;
     padding: 5px;
 }
 
 .fa-hand-scissors {
-    background-color: #cea4e4;
+    background-color: #ff00c8;
     border-radius: 100%;
     padding: 5px;
 }
@@ -90,13 +91,12 @@ ul li::before {
 
 #start:hover {
     background-color: #FFF;
-    color: #ffb8d2;
+    color: #FEC5E5;
 }
 
 #start {
     background-color: #FFF;
-    color: #ffb8d2;
-    width: 10%;
+    color: #FEC5E5;
     font-family: "Lobster", sans-serif;
 }
 
@@ -118,17 +118,19 @@ ul li::before {
 /* Game styles */
 #gamepage {
     height: 100vh;
-    display: none; /* Hidden by default */
+    display: none;
+    /* Hidden by default */
 }
 
 .controls {
-    display: none; /* Hide controls by default */
-    justify-content: center;
+    display: none;
+    /* Hide controls by default */
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    font-size: 1rem;
-    position: relative;
-    top: -7rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
 }
@@ -155,7 +157,8 @@ ul li::before {
     font-size: 1.3rem;
 }
 
-.player, .computer {
+.player,
+.computer {
     flex: 50%;
     margin: 8rem;
     border: 4px solid #000;
@@ -163,11 +166,13 @@ ul li::before {
     padding: 1rem 0;
 }
 
-.player h2, .computer h2 {
+.player h2,
+.computer h2 {
     font-size: 1.8rem;
 }
 
-.player, .computer p {
+.player,
+.computer p {
     font-size: 1.3rem;
 }
 
@@ -199,26 +204,27 @@ ul li::before {
 
 /* Modal layout */
 .winner-modal {
-    display: none; /* Modal is hidden by default */
-    position: fixed; 
-    z-index: 1; 
+    display: none;
+    /* Modal is hidden by default */
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; 
-    height: 100%; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     position: relative;
-    background-color: #b7fdda;
+    background-color: #ff00c8;
     text-align: center;
     color: black;
-    margin: 15% auto; 
+    margin: 15% auto;
     padding: 3rem;
     border: 3px solid white;
-    width: 80%; 
+    width: 80%;
 }
 
 .close {
@@ -229,16 +235,16 @@ ul li::before {
     font-size: 2rem;
     font-weight: bold;
 }
-  
+
 .close:hover {
-    color: #fff5cc;
+    color: #f1d68b;
     cursor: pointer;
 }
 
 
 /* Tablet styles */
 @media only screen and (min-width: 768px) {
-   
+
     #homepage h1 {
         font-size: 4rem;
     }
@@ -257,7 +263,7 @@ ul li::before {
     }
 
     .controls {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .game-area {
@@ -273,15 +279,18 @@ ul li::before {
         font-size: 2.3rem;
     }
 
-    .player, .computer {
+    .player,
+    .computer {
         padding: 2rem 0;
     }
 
-    .player h2, .computer h2 {
+    .player h2,
+    .computer h2 {
         font-size: 2.8rem;
     }
 
-    .player, .computer p {
+    .player,
+    .computer p {
         font-size: 2.3rem;
     }
 

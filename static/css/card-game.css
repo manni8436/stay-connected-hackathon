@@ -1,5 +1,5 @@
 body {
-    background-color: #202020;
+    background-color: #8380b3;
 }
 
 /* header and titles section */
@@ -15,12 +15,15 @@ body {
 }
 
 h1 {
+    margin: 10px;
     font-size: 1.7rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* modal */
 .modal {
-    background-color: #202020;
+    background-color: #ef919b;
     display: none;
     position: fixed;
     top: 250px;
@@ -41,8 +44,7 @@ h1 {
 }
 
 .modal-content {
-    background-color: #202020;
-    color: #c2b280;
+    background-color: #8380b3;
     margin: 30px auto;
     padding: 22px;
     height: 40%;
@@ -68,11 +70,10 @@ h1 {
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 5px;
-    border: 3px #c2b280 solid;
+    border: 3px #8380b3 solid;
 }
 
 .game-header {
-    color: #c2b280;
     padding: 20px;
     text-align: center;
     text-transform: uppercase; 
@@ -118,19 +119,17 @@ h1 {
 
 /* instructions section */
 .instructions-header {
-    color: #ff9a18;
     margin: 5px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .instructions {
-    color: #c2b280;
     margin: 10px;
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
-    border: 3px #c2b280 solid;
+    border: 3px #000 solid;
 }
 
 /* buttons section */
@@ -142,7 +141,7 @@ h1 {
     margin: 15px;
     font-weight: 600;
     text-transform: uppercase;
-    border: 3px solid #c2b280;
+    border: 3px solid #000;
 }
 
 .reset {
@@ -159,7 +158,7 @@ h1 {
     margin: auto;
     font-weight: bold;
     border-radius: 5px;
-    border: 3px solid #c2b280;
+    border: 3px solid #000;
 }
 
 #score {
