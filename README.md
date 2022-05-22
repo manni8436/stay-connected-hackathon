@@ -98,10 +98,13 @@ user's profile
 
 
 ### Games
-describe general theme of games - they come from project from each participant
+The games in this application are simple JavaScript games aiming to provide a playful and fun user experience to the players. Canvas, Card Game, Quiz Game, and the Rock, Paper & Scissors are games from previous projects from Code Institute's students. Tetris and Ping Pong were implemented from external sources mentioned in the credits.
 
 #### Cards game
-describe game
+The game is a take on the classic card game Snap. The game is aimed at all ages and genders. It features an Egyptian theme which can be enjoyed by all audiences. In particular, those with an interest in games and Egyptian Mythology.  The game aims to provide the user with an easy to use layout, easy to read instructions, and responsive feedback when selecting cards. Allowing the user to make the right selection. 
+
+- [Card Game](/README_files/homepage-desktop.png)
+
 #### Canvas
 
 describe game
@@ -181,23 +184,17 @@ The styling to the games was created with CSS code. The CSS code was validated w
 
 ### JavaScript validation
 
-Javascript code validation was complited on [jshint](https://jshint.com/)
-Initialy it was returning errors in relation of ES6 syntax, which was resolved by adding this line to the beggining of the file
-```
-/*jshint esversion: 6*/
-```
+Javascript code validation was complied on [jshint](https://jshint.com/)
 
-Second issue with jshint was that it wasn't recognizing syntax of JQuery. This was resolved by adding the below code:
-```
-/*globals $:false */
-```
-Most of the results came with no errors except of stripe_element.js It has returned that Stripe is undefined. This is due to core functionality reffering to Stripe. Copy of the code was taken from older version Stripe pages that were referenced in Butique Ado.
+None of the games returned any errors. See below for details.
 
 | App  |  file | result |
 | ------ | ------ | ------ |
-|  games | card_game | [no errors](README_files/???) |
-|  games | next_game | [no errors](README_files/???) |
-
+|  games | card-game | [no errors](README_files/jslint-card-game.png) |
+|  games | rock-paper-scissors | [no errors](README_files/jslint-rock-paper-scissors.png) |
+|  games | quiz-game | [no errors](README_files/jslint-quiz-game.png) |
+|  games | game-5 | [no errors](README_files/jslint-game5.png) |
+|  games | game-6 | [no errors](README_files/jslint-game6.png) |
 
 ### Python beautify
 All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Than the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
