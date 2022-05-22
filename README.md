@@ -9,7 +9,7 @@ DON'T FORGET TO GENERATE THE TABLE OF CONTENT -
 
 [![showpiece home page](README_files)](https://?????.herokuapp.com/)
 
-Click [here](https://????.herokuapp.com/) to live site.  
+Click [here](https://plugged-in1.herokuapp.com/) to live site.  
 ------
 
 ## UX
@@ -146,7 +146,7 @@ Adding the possibility to stick pictures to the canvas will make the user experi
    + HTML5
    + CSS3
    + JavaScript
-   + jQuery (check if jquery was used ???)
+   + jQuery
    + Python
    + Django
 
