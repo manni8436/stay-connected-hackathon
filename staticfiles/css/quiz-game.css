@@ -1,0 +1,261 @@
+/* Goolge Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+
+
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/space1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Balsamiq Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Balsamiq Sans", sans-serif;
+    font-size: 375%;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Games area */
+.quiz-container {
+    border-radius: 5px;
+    background-color: lightblue;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 4, 0.75) 1.95px 1.95px 2.6px;
+    text-align: center;
+    line-height: 1.7;
+}
+
+#welcome,
+#outro-container {
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+/* Score tracking and question counter area */
+.score-tracking {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+/* Progress bar */
+#outer-progress-bar {
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid orange;
+    margin-bottom: 5px;
+}
+
+#inner-progress-bar {
+    height: 1.9rem;
+    background-color: orange;
+    width: 0%;
+}
+
+/* Buttons */
+.btn-grid {
+    display: grid;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.btn {
+    background-color: #c3fc95;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 32px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    border-color: orange;
+}
+
+#start-btn,
+#restart-btn,
+#next-btn,
+#home-btn,
+.modal-btn,
+#contact-btn {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#close {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 5px;
+}
+
+.back-btn {
+    display: inline-block;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: auto;
+    padding: 12px 24px;
+    margin-top: 25px;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu-controls {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    gap: 33px;
+}
+
+.quiz-control {
+    text-align: center;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Contact form */
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 525px;
+    border-radius: 30px;
+    color: #2e2e2e;
+    background-color: lightblue;
+    box-shadow: rgba(0, 0, 4, 0.75) 1.95px 1.95px 2.6px;
+}
+
+.form h2 {
+    padding-bottom: 25px;
+}
+
+.form h2,
+h3 {
+    text-align: center;
+}
+
+.text-input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#submit-button {
+    display: inline-block;
+    background-color: #ffa500;
+    color: #000;
+    border: 1px solid #ffa600;
+    border-radius: 30px;
+    font: bold 18px;
+    font-size: 120%;
+    width: auto;
+    padding: 12px 24px;
+    text-align: center;
+    align-self: center;
+    vertical-align: middle;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    opacity: 0.8;
+}
+
+#playerResponse {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Media queries */
+/* for large and medium screens wide and down */
+@media screen and (max-width: 1500px) {
+    body {
+        background-image: url("../images/space2.jpg");
+    }
+}
+
+/* for small screen sizes from 500px wide and down */
+@media screen and (max-width: 500px) {
+    body {
+        background-image: url("../images/spaceman.jpg");
+        height: 110vh;
+    }
+
+    h1 {
+        font-size: 300%;
+    }
+
+    #welcome-heading,
+    #welcome-intro {
+        padding: 10px 50px;
+        line-height: normal;
+    }
+
+    .score-tracking,
+    .flexbox {
+        justify-content: space-around;
+    }
+
+    #quiz-questions {
+        padding: 20px;
+    }
+}
