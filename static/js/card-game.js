@@ -138,24 +138,32 @@ function flipCard() {
 }
 
 let scoreArea = document.getElementById("score");
+// this variable is added for scores submition form
+let scoresFormLevel = document.getElementById("level")
 
 function pushScore() {
     if (selectedLevel == "easy") {
         scoreArea.innerText = `${score} / 8`;
+        scoresFormLevel.value = 'easy';
     } else if (selectedLevel == "medium") {
         scoreArea.innerText = `${score} / 10`;
+        scoresFormLevel.value = 'medium';
     } else if (selectedLevel == "hard") {
         scoreArea.innerText = `${score} / 12`;
+        scoresFormLevel.value = 'hard';
     }
 }
+// this variable is added for scores submition form
+let scoresFormMoves = document.getElementById("moves")
 
 function pushMoves() {
     document.getElementById("movescounter").innerHTML = `moves: ${j - 1}`;
+    document.getElementById("moves").value = j - 1
 }
 
 // switch off the restet game and let django reset the game by reloading url after form submittions
-let resetButton = document.getElementById("reset");
-resetButton.addEventListener("click", resetGame);
+// let resetButton = document.getElementById("reset");
+// resetButton.addEventListener("click", resetGame);
 
 function resetGame() {
     j = 1;

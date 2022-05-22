@@ -19,8 +19,7 @@
             <div class="instructions">
                 <h4 class="instructions-header">how to play!</h4>
                 <p>Once you are ready to play the game, choose two cards and if they match then you will get a point.
-                    you can get a total of 8 points
-                    on easy level, 10 points on medium level and 12 points on hard level.
+                    game completes when you find all cards. Try to accomplish this in as little moves as possible.
                 </p>
             </div>
         </div>
@@ -120,7 +119,7 @@
             <div id="score">0 / 10 </div>
         </div>
         <div class="col-sm-1 col-md-1 col-lg-1 text-center">
-            <button type="button" class="btn reset" id="reset">reset</button>
+            <div type="button" class="btn reset" id="reset">reset</div>
         </div>
     </div>
 </div>
@@ -132,10 +131,16 @@
     <div class="modal-content">
         <p>you have found all the cards!, Would you like to play again?</p>
     </div>
-    <button type="button" class="modal-close-button" id="close">close</button>
-    <button type="button" class="modal-replay-button" id="replay">replay</button>
-</div>
 
+    <button type="button" class="modal-close-button" id="close">close</button>
+    <button type="submit" class="modal-replay-button" id="submit">replay</button>
+
+</div>
+<form action="">
+<input type="text" name="moves" id="moves">
+<input type="text" name="level" value="medium" id="level">
+<button type="submit">submit</button>
+</form>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
