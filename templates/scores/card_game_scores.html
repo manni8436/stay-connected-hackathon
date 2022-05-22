@@ -28,17 +28,17 @@
         btn btn-outline-secondary
         {% endif %}
         ">Easy</a>
-        <a href="{% url 'card_game_easy' %}"
+        <a href="{% url 'card_game_medium' %}"
         class="
-        {% if request.resolver_match.url_name == 'card_game_easy' %}
+        {% if request.resolver_match.url_name == 'card_game_medium' %}
         btn btn-secondary
         {% else %}
         btn btn-outline-secondary
         {% endif %}
         ">Medium</a>
-        <a href="{% url 'card_game_easy' %}"
+        <a href="{% url 'card_game_hard' %}"
         class="
-        {% if request.resolver_match.url_name == 'card_game_easy' %}
+        {% if request.resolver_match.url_name == 'card_game_hard' %}
         btn btn-secondary
         {% else %}
         btn btn-outline-secondary

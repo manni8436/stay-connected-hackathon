@@ -5,6 +5,7 @@ from django.views import generic, View
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.urls import reverse_lazy
 from .forms import CardGameForm
 from .models import CardGameScore
 
@@ -16,7 +17,7 @@ class CardGameView(LoginRequiredMixin, CreateView):
     '''
     template_name = 'games/card-game.html'
 
-    # success_url = 'card_game_scores'
+    # success_url = 'card_game_easy'
 
     def get(self, request, *args, **kwargs):
 
@@ -27,18 +28,18 @@ class CardGameView(LoginRequiredMixin, CreateView):
         form.instance.player = request.user
 
         if form.is_valid():
-            form.save()
-            return HttpResponseRedirect('/')
-
+            score = form.save(commit=False)
+            score.save()
+            
         else:
             return HttpResponseRedirect('/')
 
-        return HttpResponseRedirect('/')
+        return HttpResponseRedirect(reverse_lazy('card_game_easy'))
 
 
 class CardGameEasyScoresView(LoginRequiredMixin, generic.ListView):
     '''
-    view to display list of scores
+    view to display list of scores for Easy level
     '''
     # TODO add filter by the team, once teams are created
     # def get_queryset(self):
@@ -49,6 +50,26 @@ class CardGameEasyScoresView(LoginRequiredMixin, generic.ListView):
     #         .filter(player=self.request.user))
     #     return queryset
     quesryset = CardGameScore.objects.filter(level='easy')
+    model = CardGameScore
+    template_name = 'scores/card_game_scores.html'
+    paginate_by = 6
+
+
+class CardGameMediumScoresView(LoginRequiredMixin, generic.ListView):
+    '''
+    view to display list of scores for Medium level
+    '''
+    quesryset = CardGameScore.objects.filter(level='medium')
+    model = CardGameScore
+    template_name = 'scores/card_game_scores.html'
+    paginate_by = 6
+
+
+class CardGameHardScoresView(LoginRequiredMixin, generic.ListView):
+    '''
+    view to display list of scores for Hard level
+    '''
+    quesryset = CardGameScore.objects.filter(level='hard')
     model = CardGameScore
     template_name = 'scores/card_game_scores.html'
     paginate_by = 6
