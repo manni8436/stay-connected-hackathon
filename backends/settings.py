@@ -15,8 +15,9 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env  # noqa # pylint: disable=unused-import
 
+# test
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
@@ -31,12 +32,17 @@ DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 DEBUG = DEVELOPMENT
 
-# TODO please remove heroku app from development when finished project
+# TODO Manni's settings
 if DEVELOPMENT:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
 else:
     ALLOWED_HOSTS = ["plugged-in1.herokuapp.com"]
 
+
+# if DEVELOPMENT:
+#     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in-team.herokuapp.com"]
+# else:
+#     ALLOWED_HOSTS = ["plugged-in-team.herokuapp.com"]
 
 # Application definition
 
@@ -57,6 +63,8 @@ INSTALLED_APPS = [
 
     # our apps
     'home',
+    'profiles',
+    'scores',
 
     # other apps
     'crispy_forms',
@@ -91,6 +99,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
+
             ],
             'builtins': [
                 'crispy_forms.templatetags.crispy_forms_tags',
@@ -100,7 +110,7 @@ TEMPLATES = [
     },
 ]
 
-# MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -177,7 +187,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'

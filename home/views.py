@@ -23,13 +23,6 @@ def get_rock_paper_scissors(request):
     return render(request, 'games/rock-paper-scissors.html')
 
 
-def get_card_game(request):
-    '''
-    view to return card game page
-    '''
-    return render(request, 'games/card-game.html')
-
-
 def get_quizanaughts_welcome(request):
     '''
     view to return the view to display welcome page wor quizanaughts
@@ -51,15 +44,15 @@ def get_canvas_art(request):
     return render(request, 'games/canvas-art.html')
 
 
-def get_game_5(request):
+def get_ping_pong(request):
     '''
-    view to return game 5
+    view to return ping pong
     '''
-    return render(request, 'games/game-5.html') 
+    return render(request, 'games/ping_pong.html') 
 
 
-def get_game_6(request):
+def get_tetris(request):
     '''
-    view to return game 6
+    view to return tetiis
     '''
-    return render(request, 'games/game-6.html')
+    return render(request, 'games/tetris.html')

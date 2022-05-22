@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block extra_css %}
-<link rel="stylesheet" href="{% static '/css/quiz-game.css' %}">
+<link rel="stylesheet" href="{% static 'css/quiz-game.css' %}">
 {% endblock %}
 {% block content %}
 <!-- Content Goes here -->
@@ -50,10 +50,13 @@
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    {% endblock content %}
-    {% block postload_js %}
-    <script src="{% static '/js/quiz-game-menu.js' %}">
-    </script>
-    {% endblock %}
+
+
+
+        {% endblock %}
+
+
+        {% block postload_js %}
+
+        <script src="{% static 'js/quiz-game-menu.js' %}"></script>
+        {% endblock %}

@@ -40,7 +40,7 @@
       <div  class="flex-shrink-0">
       {% block content %}
       <!-- Content Goes here -->
-      {% endblock content %}
+      {% endblock %}
       </div>
     </main>
 
@@ -48,7 +48,7 @@
 
     <!-- This allows us to extend the footer and add different scripts for each page -->
     {% block postload_js %}
-      <script src="{% static '/js/canvas-board.js' %}"></script>
+
     {% endblock %}
   </body>
 </html>
