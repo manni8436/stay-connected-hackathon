@@ -2,3 +2,16 @@
     background-image: linear-gradient(to right top, #ef919b, #f8b392, #f6f7b0, #a0cfa2, #71bee7, #8380b3, #809bce, #b8e0d2, #d6eadf, #95b8d1, #eac4d5, #f6f7b0);
     text-transform: uppercase;
 }
+
+.carousel-caption {
+    text-transform: uppercase;
+    bottom: 3rem;
+    z-index: 10;
+    box-shadow: inset 30rem 30rem 30rem rgb(0 0 0 / 75%);
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.footer {
+    background-image: linear-gradient(to right top, #ef919b, #f8b392, #f6f7b0, #a0cfa2, #71bee7, #8380b3, #809bce, #b8e0d2, #d6eadf, #95b8d1, #eac4d5, #f6f7b0);
+}
