@@ -23,13 +23,6 @@ def get_rock_paper_scissors(request):
     return render(request, 'games/rock-paper-scissors.html')
 
 
-def get_card_game(request):
-    '''
-    view to return card game page
-    '''
-    return render(request, 'games/card-game.html')
-
-
 def get_quizanaughts_welcome(request):
     '''
     view to return the view to display welcome page wor quizanaughts
