@@ -15,6 +15,7 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env  # noqa # pylint: disable=unused-import
 
+# test
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
