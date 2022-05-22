@@ -103,20 +103,40 @@ The games in this application are simple JavaScript games aiming to provide a pl
 #### Cards game
 The game is a take on the classic card game Snap. The game is aimed at all ages and genders. It features an Egyptian theme which can be enjoyed by all audiences. In particular, those with an interest in games and Egyptian Mythology.  The game aims to provide the user with an easy to use layout, easy to read instructions, and responsive feedback when selecting cards. Allowing the user to make the right selection. 
 
-- [Card Game](/README_files/homepage-desktop.png)
-
-#### Canvas
-
-describe game
+![Card Game](/README_files/cardgame.png)
 
 #### Rock Paper Scizors
-describe game
-#### Quizz
-describe game
+This game is a take on the classic: Rock, Paper, Scissors. It was built using HTML, CSS and JavaScript. To interact with the game, the user will need to select either. Rock, Paper or Scissors. They will play against the computer. Whoever reaches 3 points first wins the game. This game is aimed at all ages and aims to provide a quick fun experience.
+
+![Rock Paper Scizors](/README_files/rockgame.png)
+
+#### Quiz Game
+Quizanaughts is a fun, interactive quiz. Aimed at older children between the ages of 9-13. The quiz aims to help educate younger audiences on space. The quiz covers a wide variety of space-related questions that help the user test their knowledge. The user can see how well they score via a scoring system. A timer has also been included to make the game more challenging. Both the timer and the scoring system helps to make the game more competitive. The quiz is a great educational tool and helps to create an awareness of space and learn about the history of space in younger generations.
+
+![Rock Paper Scizors](/README_files/quizgame.png)
+
+#### Canvas
+Canvas is a web-based painting page where users can use their creativity by painting and adding comments to the screen by using the mouse. 
+
+![canvas](/README_files/canvas.png)
+
+### Ping Pong
+Ping Pong, also known as table tennis, is a game in which two hit a little light ball back and forth across a table using a small paddle. The player plays against the computer, and the paddle is moved by using the mouse. A point is scored when a player fails to return the ball to the other player.
+
+![Ping Pong](/README_files/pingpong.png)
+
+### Tetris
+Tetris is a puzzle video game. In Tetris, players complete lines by moving differently shaped pieces, which descend onto the playing field. The completed lines disappear and grant the player points, and the player can proceed to fill the vacated spaces. The game ends when the playing field is filled. The longer the player can delay this outcome, the higher their score will be. 
+
+![Tetris](/README_files/tetris.png)
+
 ## Future Features 
-
-write how the app can be expanded
-
+- Add a multiplayer feature.
+Adding a multiplay feature to the games will allow the users to enjoy playing the games together and compete simultaneously. 
+- Add co-op feature
+adding the co-op feature to the games will allow more users to participate in the same match and create different groups complete with each other.
+- Add capturing images on canvas
+Adding the possibility to stick pictures to the canvas will make the user experience more engaging and interactive.
 
 
 ## Technologies Used
@@ -163,8 +183,16 @@ write how the app can be expanded
 
 
 | App  |  Pages | Result |
-| ------ | ------ | ------ |
-|  Home | All | [No errors](README_files/???) |
+| -----| -----------| ------ |
+| Home |   base.html | [No errors](README_files/htmlok.png) |
+| Dashboard |   group-dashboard.html | [No errors](README_files/htmlok.png) |
+| Game |   card-game.html | [No errors](README_files/htmlok.png) |
+| Game |rock-paper-scissors.html| [No errors](README_files/htmlok.png) |
+| Game |quiz-game-home.html | [No errors](README_files/htmlok.png) |
+| Game |quiz-game.html | [No errors](README_files/htmlok.png) |
+| Game |canvas-art.html | [No errors](README_files/htmlok.png) |
+| Game |game-5.html | [No errors](README_files/htmlok.png) |
+| Login |game-6.html | [No errors](README_files/htmlok.png) |
 
 
 
@@ -237,7 +265,8 @@ list the bugs here
 
 ## Bugs left in the project
 
-list the bugs here 
+The pop-up message to the user when playing the game in Rock, Paper & Scissors is misplaced on smaller screens creating a bad user experience for the player when using it on small screens. Due to lack of time, this bug was left unfixed in the project.
+![Rock, Paper & Scissors Bug](README_files/bug-rock-papper.png) |
 
 ## Deployment and making a clone
 
