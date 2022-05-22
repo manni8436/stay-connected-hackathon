@@ -10,7 +10,7 @@ from .forms import UserProfileForm
 
 
 @login_required
-def profile(request):
+def profile_form_view(request):
     """
     Display the user's profile
     """

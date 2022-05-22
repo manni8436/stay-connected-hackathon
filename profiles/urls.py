@@ -1,5 +1,5 @@
-from django.contrib import admin
-from django.urls import path, include
+'''urls for profiles app'''
+from django.urls import path
 from . import views
 
 
