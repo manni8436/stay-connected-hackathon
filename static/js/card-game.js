@@ -19,10 +19,10 @@ hard = hard.substring(0, hard.length - 16);
 
 //add random colors to cards
 let basicColorArray = [
-    '#FF6633', '#FF6633', '#FFB399', '#FFB399', '#FF33FF',
-    '#FF33FF', '#66991A', '#66991A', '#00B3E6', '#00B3E6',
-    '#FFFC00', '#FFFC00', '#28921E', '#28921E', '#FFFF99',
-    '#FFFF99'
+    '#EF919B', '#EF919B', '#F8B392', '#F8B392', '#F6F7B0',
+    '#F6F7B0', '#A0CFA2', '#A0CFA2', '#71BEE7', '#71BEE7',
+    '#8380B3', '#8380B3', '#809BCE', '#809BCE', '#95B8D1',
+    '#95B8D1'
 ];
 
 let colorArray;
@@ -33,10 +33,10 @@ function sortColors() {
         colorArray = basicColorArray;
         cards = document.getElementsByClassName("card-easy");
     } else if (selectedLevel == "medium") {
-        colorArray.push('#3366E6', '#3366E6', '#FF9A18', '#FF9A18');
+        colorArray.push('#B8E0D2', '#B8E0D2', '#D6EADF', '#D6EADF');
         cards = document.getElementsByClassName("card-medium");
     } else if (selectedLevel == "hard") {
-        colorArray.push('#3366E6', '#3366E6', '#FF9A18', '#FF9A18', '#99FF99', '#99FF99', '#C2B280', '#C2B280');
+        colorArray.push('#B8E0D2', '#B8E0D2', '#D6EADF', '#D6EADF', '#EAC4D5', '#EAC4D5', '#B7FDDA', '#B7FDDA');
         cards = document.getElementsByClassName("card-hard");
     }
 

@@ -29,6 +29,7 @@ h1 {
     font-size: 375%;
     font-weight: 700;
     text-align: center;
+    padding-top: 50px;
 }
 
 img {
@@ -245,7 +246,7 @@ textarea {
 
     #welcome-heading,
     #welcome-intro {
-        padding: 20px;
+        padding: 10px 50px;
         line-height: normal;
     }
 
