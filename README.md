@@ -251,21 +251,113 @@ Automated tests have not been created due to time constrains of the project.
 
 ### Lighthouse
 
-
-
 ![lighthouse report](???)
 
 ### Manual tests
 
-List the manual tests performed
+Manual testing was performed by team members and below are all the manual tests performed on three of the games which details the test, expected outcome and result as well as user recommendation for some. This was used to improve the games where possible within the time constraint.
+
+ #### Rock, Paper, Scissors
+
+ #### Test 1
+   - Test: does the navigation work in the game?
+   - Expected outcome: all the navigation link will work
+   - Result:  the navigation worked well and it was easy to see when you won or lost the game. The rules were clear to
+
+#### Test 2
+   - Test : what happens if you win and lose the game?
+   - Expected outcome: 
+      - For when I win: There will be a display to show that i’ve won the game
+      - For when I lose: There will be a display to show me that i’ve lost. 
+   - Results: when I won I got a pop up telling me that I had won, when I lost I got a similar pop up telling me that the computer had won. It wasn’t very clear when I won rounds though. The text was displayed at the top. The styling of the button at the bottom also seemed to not be responsive to smaller devices 
+
+#### Test 3
+   - Test: The buttons work for rock, paper and scissors
+   - Expected results: The buttons will work correctly in the game
+   - Results: All three buttons worked correctly
+
+#### Card Game
+
+#### Test 1
+   - Test: All cards work correctly
+   - Expected result: All the cards can be clicked on in all difficulties
+   - Results: all the cards can be interacted with
+
+#### Test 2 
+   - Test: Does the navigation work as intended
+   - Expected outcome: all the buttons will work correctly
+   - Test results: the reset button works well resetting the game. The Moves: works well to track the number of moves the user makes. The easy medium and hard buttons work well changing the difficulty. I think that it would work better if these buttons didn’t reset progress when they’re clicked on though. Especially if someone was playing the game on their phone where it would be easier to miss click
+
+#### Test 3 
+   - Test: what happens if you get all of the matches? 
+   - Expected outcome: the user would get a message saying well done or something similar
+   - Test results: I wasn’t able to finish the game. None of the remaining colours matched. Also I was able to click on a card that i had previously turned over
+
+#### Test 4
+   - Test: Is the game responsive? 
+   - Expected result: the game will respond well on all devices
+   - Result: The game responded well on all devices. Both mobile and tablet
+
+#### Quizanaughts
+
+#### Test 1
+   - Test: do all of the colours display correctly when clicking throught the questions?
+   - Expected result: the right and wrong answers display in either green or red accordingly
+   - Result: the colours displayed correctly
+
+#### Test 2
+   - Test: does the score display a running total? Does the user get one point for a correct answer and zero points for a wrong answer?
+   - Expected results: the user will get a rolling total  score on the questions
+   - Result: the score adds up correctly, all correct answers add 1 point and incorrect answers add 0 points
+   - This was achieved by: I clicked through all the answers making sure that the total was correct when I scored on each questions, I did this multiple times on each question
+
+#### Test 3
+   - Test: what happens if you run out of time?
+   - Expected results:
+      - Timer goes to 0
+      - Pop up message displays telling  the user that they have run out of time and their score out of 15
+      - User can no longer select an answer
+      - User is taken to a navigation selection with options home and play again
+      - Running out of time resets the question number to 1
+  - Results:
+    - Timer goes to 0
+    - Pop up message displays telling the user that they have run out of time and thier score out of 15
+    - User can no longer select an answer
+    - User is taken to a navigation selection with options home and play again
+    - Running out of time resets the question number to 1
+- This was achieved by: I went through each individual question and waited for the timer to reach 0 seconds
+
+#### Test 4
+   - Test: what happens if you achieve the highest score and the lowest score?
+   - Expected outcome:
+     - Score= 15,0
+     - Congratulations message, try again message
+     - Navigation buttons work as expected 
+   - Test outcome:
+     - Score= 15, 0
+     - Congratulations message displays for 15 and 0. 
+     - Navigation buttons worked as expected 
+   - This was achieved by: I scored correctly on all the questions/ I scored 0 points on all the questions
+
+#### Test 5
+   - Test: the questions track correctly, displaying which question number the user is on?
+   - Expected result: the question number increases, resets and the progress bar increases
+   - Test result: the question number increases, resets and the progress bar increases, following the users progress
+   - This was achieved by: I went through the questions, reset the questionnaire(try again)
+
+#### Test 6
+   - Test: is the game resonive to all devices?
+   - Expected result: the game will be responsive
+   - Result: the game was responsive. However, on smaller screens the content seemed to align to the left or the screen
+
 
 ## Project Bugs and Solutions:
 
-list the bugs here
+- Responsiveness issues with Quizanaughts game on screen for mobiles at size 320px. This happened due to padding creating a scroll effect and the width size being set too wide for mobile at 400px. Once the width was changed and padding removed the game was fully responive on tablet and mobile.
 
 ## Bugs left in the project
 
-The pop-up message to the user when playing the game in Rock, Paper & Scissors is misplaced on smaller screens creating a bad user experience for the player when using it on small screens. Due to lack of time, this bug was left unfixed in the project.
+- The pop-up message to the user when playing the game in Rock, Paper & Scissors is misplaced on smaller screens creating a bad user experience for the player when using it on small screens. Due to lack of time, this bug was left unfixed in the project.
 ![Rock, Paper & Scissors Bug](README_files/bug-rock-papper.png) |
 
 ## Deployment and making a clone
@@ -274,14 +366,14 @@ The pop-up message to the user when playing the game in Rock, Paper & Scissors i
 
 **In your app** 
 
-1. add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
+1. Add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
 2. Git add and git commit the changes made
 
 **Log into heroku**
 
 3. Log into [Heroku](https://dashboard.heroku.com/apps) or create a new account and log in
 
-4. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+4. Top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
 
 5. Write app name - it has to be unique, it cannot be the same as this app
 6. Choose Region - I am in Europe
@@ -395,167 +487,8 @@ EMAIL_HOST_PASS is the password copied from above.
 EMAIL_HOST_USER is the gmail email address
 
 
-### Setting AWS bucket ??? remove if AWS wasn't used
-
-
-1. Go to [Amzon Web Services](https://aws.amazon.com/) page and login or register
-
-2. You should be redirected to AWS Managment Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
-
-3. Below the header AWS Services click into All Services and find **S3** under Storage
-
-4. Create New Bucket using **Create Bucket** button in top right hand corner
-
-- **Configuration:** type in your chosen name for the bucket (preferably matching your heroku app name) and AWS Region closest to you
-
-
-- **Object ownership:** ACLs enabled, Bucket owner preffered
-
-- **Block Public Access settings:** Uncheck to allow public access, Acknowledge that the current settings will result that the objects within the bucket will become public
-
-- Click **Create Bucket**
-
-5. You are redirected to Amazon S3 with list of your buckets. Click into the name of the bucket you just created
-
-6. Find the tab **Properties** on the top of the page:
-**Static website hosting** at the bottom of the properties page: clik to edit, click enable, fill in index document: index.html and error.html for error
-
-7. On the **Permissions** tab:
-- Cross-origin resource sharing (**CORS**) Paste in the below code as configuration and save
-
-```
-[
-  {
-      "AllowedHeaders": [
-          "Authorization"
-      ],
-      "AllowedMethods": [
-          "GET"
-      ],
-      "AllowedOrigins": [
-          "*"
-      ],
-      "ExposeHeaders": []
-  }
-]
-```
-- **Bucket Policy** within permissions tab: Edit bucket policy
-Click AWS Policy Generator (top right conrner)
-
-Select type of policy: S3 Bucket policy
-Principal: * (allows all)
-Actions: Get object
-Amazon Resource Name (ARN): paste from the Edit bucket policy page in permissions
-Click Add statement Than Click Generate Policy and Copy the policy into bucket policy editor. 
-In the policy code find "Resource" key and add "/*" after the name of the bucket to enable all
-Save changes
-
-- **Access control list (ACL)** within permissions tab: click Edit
-
-find Everyone (public access) and check List box and save
-
-8. Identity and Access Management (IAM)
-Go back to the AWS Management Console and find IAM in AWS Services
-
-- side menu - User Groups and click **Create Group**
-name group "manage-your-app-name" and click Create group
-
-- side menu - Policies and click **Create Policy**
-Click import managed policy - find AmazonS3FullAccess
-Copy ARN again and paste into "Resource" add list containint two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and foldrs in the bucket
-
-Click bottom right Add Tags, than Click bottom right Next: Review
-Add name of the policy and description
-
-Click bottom right Create policy
-
-9. Attach policy to the group we created:
-- go to User Groups on side menu
-- select your group from the list
-- go to permissions tab and add permissions drop down and choose **Attach policies**
-- find the policy created above and click button in bottom right Add permissions
-
-10. Create User to go in the group
-- **Users** in the side menu and click add users
-
-User name: your-app-staticfiles-user
-Check option: Access key - Programmatic access
-Click button at the bottom right for Next
-- Add user group and add user to the group you created earlier
-Click Next Tags and Next: review and Create user
-- Download .csv file
-
-
-11. Connect django to AWS S3 bucket
-- install boto3
-- install django-storages
-- freeze to requirements.txt
-- add storages to installed apps in settings.py
-
-```
-if 'USE_AWS' in os.environ:
-    # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
-    # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
-    AWS_S3_REGION_NAME = 'eu-west-2'
-    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-```
-
-12. Go to heroku to set up enviromental variables
-
-open CSV file downloaded earlier and copy each variable into heroku Settings
-
-AWS_STORAGE_BUCKET_NAME
-AWS_ACCESS_KEY_ID from csv
-AWS_SECRET_ACCESS_KEY from csv
-USE_AWS = True
-remove DISABLE_COLLECTSTATIC variable from heroku
-
-13. Create file in root directory custom_storages.py
-
-```
-from django.conf import settings
-from storages.backends.s3boto3 import S3Boto3Storage
-
-
-class StaticStorage(S3Boto3Storage):
-    location = settings.STATICFILES_LOCATION
-
-
-class MediaStorage(S3Boto3Storage):
-    location = settings.MEDIAFILES_LOCATION
-```
-
-14. Go to settings.py, add the AWS settings
-
-```
-    # Static and media files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-
-    # Override static and media URLs in production
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-```
-
-15. To load the media files to S3 bucket
-
-- Go to your S3 bucket page on AWS. Create new folder "media"
-- go to the media folder and click Upload
-
-
 ## Credits 
-### Online resources ??? check if needs to be added
+### Online resources
 * [Icons8](https://icons8.com/)
 * [unsplash](https://unsplash.com/)
 * [Fontawsome](https://fontawesome.com/)
@@ -564,8 +497,8 @@ class MediaStorage(S3Boto3Storage):
 * [Markdown Table of content generator](http://ecotrust-canada.github.io/markdown-toc/)
 
 * [icon](https://www.flaticon.com/free-icons/trees)
-* png to svg [converter](https://convertio.co/download/d39aa7f30e79f4379b9bce697c5afe384b5853/)
-* resizing photos by [photoresizer](https://www.photoresizer.com/)
+* PNG to SVG [converter](https://convertio.co/download/d39aa7f30e79f4379b9bce697c5afe384b5853/)
+* Resizing photos by [photoresizer](https://www.photoresizer.com/)
 * [Tetris Game by Rosetta Code](https://rosettacode.org/wiki/Tetris/JavaScript)
 * [Ping Pong Game By Code Explained](https://www.youtube.com/watch?v=nl0KXCa5pJk)
 
@@ -575,4 +508,12 @@ class MediaStorage(S3Boto3Storage):
 
 ### People
 
-- Sean for supporting our team as a facilitator
+Meet the team behind Plugged-in:
+- [Emanuel Silva](https://github.com/manni8436)
+- [Joanna Gorska](https://github.com/JoGorska)
+- [John Bachtiger](https://github.com/Jbachtiger)
+- [Sam Hulme](https://github.com/SamHulme1)
+- [Vanessa Anna-Maria Andersson](https://github.com/van-essa) 
+
+Also a big thank you to:
+- Sean Young for supporting our team as a facilitator
