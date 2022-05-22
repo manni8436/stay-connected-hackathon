@@ -16,10 +16,12 @@ Click [here](https://????.herokuapp.com/) to live site.
 
 UX Design is a process that can be used to design anything from products to bicycles to mobile applications. The focus of this design process puts the users' needs first--making their interaction with the application a pleasureable one.
 
-Flexibility and efficiency of use
-The apllication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+#### Flexibility and efficiency of use
 
-Aesthetic and minimalist design
+The aplication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+
+#### Aesthetic and minimalist design
+
 The application does not contain irrelevant or rarely needed information, following a minimal design with pastel colours to make the aesthetic experience playful. The user has clear visibility of the application's information and usage.
 
 ## Purpose
@@ -34,15 +36,15 @@ Get more people plugged into your group, play more games, to have immense compet
 ### User Stories that have been satisfied by creation of particular apps in ths project:
 
 | id  |  content |
-| ------ | ------ | ------ |
-| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
+| ------ | ------ |
+|[#31](https://github.com/manni8436/stay-connected-hackathon/issues/31)| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
 
 
 ### User stories that are planned for next sprint
 
 | id  |  content | 
 | ------ | ------ |
-| As a Player, I can play co-op games with family and friends and score up together |
+|[#32](https://github.com/manni8436/stay-connected-hackathon/issues/32)| As a Player, I can play co-op games with family and friends and score up together |
 
 
 ## Wireframes 
@@ -96,22 +98,45 @@ user's profile
 
 
 ### Games
-describe general theme of games - they come from project from each participant
+The games in this application are simple JavaScript games aiming to provide a playful and fun user experience to the players. Canvas, Card Game, Quiz Game, and the Rock, Paper & Scissors are games from previous projects from Code Institute's students. Tetris and Ping Pong were implemented from external sources mentioned in the credits.
 
 #### Cards game
-describe game
-#### Canvas
+The game is a take on the classic card game Snap. The game is aimed at all ages and genders. It features an Egyptian theme which can be enjoyed by all audiences. In particular, those with an interest in games and Egyptian Mythology.  The game aims to provide the user with an easy to use layout, easy to read instructions, and responsive feedback when selecting cards. Allowing the user to make the right selection. 
 
-describe game
+![Card Game](/README_files/cardgame.png)
 
 #### Rock Paper Scizors
-describe game
-#### Quizz
-describe game
+This game is a take on the classic: Rock, Paper, Scissors. It was built using HTML, CSS and JavaScript. To interact with the game, the user will need to select either. Rock, Paper or Scissors. They will play against the computer. Whoever reaches 3 points first wins the game. This game is aimed at all ages and aims to provide a quick fun experience.
+
+![Rock Paper Scizors](/README_files/rockgame.png)
+
+#### Quiz Game
+Quizanaughts is a fun, interactive quiz. Aimed at older children between the ages of 9-13. The quiz aims to help educate younger audiences on space. The quiz covers a wide variety of space-related questions that help the user test their knowledge. The user can see how well they score via a scoring system. A timer has also been included to make the game more challenging. Both the timer and the scoring system helps to make the game more competitive. The quiz is a great educational tool and helps to create an awareness of space and learn about the history of space in younger generations.
+
+![Rock Paper Scizors](/README_files/quizgame.png)
+
+#### Canvas
+Canvas is a web-based painting page where users can use their creativity by painting and adding comments to the screen by using the mouse. 
+
+![canvas](/README_files/canvas.png)
+
+### Ping Pong
+Ping Pong, also known as table tennis, is a game in which two hit a little light ball back and forth across a table using a small paddle. The player plays against the computer, and the paddle is moved by using the mouse. A point is scored when a player fails to return the ball to the other player.
+
+![Ping Pong](/README_files/pingpong.png)
+
+### Tetris
+Tetris is a puzzle video game. In Tetris, players complete lines by moving differently shaped pieces, which descend onto the playing field. The completed lines disappear and grant the player points, and the player can proceed to fill the vacated spaces. The game ends when the playing field is filled. The longer the player can delay this outcome, the higher their score will be. 
+
+![Tetris](/README_files/tetris.png)
+
 ## Future Features 
-
-write how the app can be expanded
-
+- Add a multiplayer feature.
+Adding a multiplay feature to the games will allow the users to enjoy playing the games together and compete simultaneously. 
+- Add co-op feature
+adding the co-op feature to the games will allow more users to participate in the same match and create different groups complete with each other.
+- Add capturing images on canvas
+Adding the possibility to stick pictures to the canvas will make the user experience more engaging and interactive.
 
 
 ## Technologies Used
@@ -150,48 +175,54 @@ write how the app can be expanded
 
 ### HTML beautify
 
- [online HTML code Beautifier](https://htmlbeautify.com/). 
+[online HTML code Beautifier](https://htmlbeautify.com/). 
 
 ### HTML valiation
 
 [HTML validator](https://validator.w3.org/nu/#textarea)
 
 
-| App  |  page | result |
-| ------ | ------ | ------ |
-|  Home | Home | [No errors](README_files/???) |
+| App  |  Pages | Result |
+| -----| -----------| ------ |
+| Home |   base.html | [No errors](README_files/htmlok.png) |
+| Dashboard |   group-dashboard.html | [No errors](README_files/htmlok.png) |
+| Game |   card-game.html | [No errors](README_files/htmlok.png) |
+| Game |rock-paper-scissors.html| [No errors](README_files/htmlok.png) |
+| Game |quiz-game-home.html | [No errors](README_files/htmlok.png) |
+| Game |quiz-game.html | [No errors](README_files/htmlok.png) |
+| Game |canvas-art.html | [No errors](README_files/htmlok.png) |
+| Game |game-5.html | [No errors](README_files/htmlok.png) |
+| Login |game-6.html | [No errors](README_files/htmlok.png) |
 
 
 
 ### CSS validation
 
-Due to extensive user of Bottstrap classes, only minimial styling was applied. Most of the css code comes from bootstrap's carousele template with some modifications. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
+Due to extensive user of Bootstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from Bootstrap's carousel template with some modifications. 
+The styling to the games was created with CSS code. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
 
-| App  |  file | result |
-| ------ | ------ | ------ |
-|  home | base.css | [No errors](README_files/???) |
+| App  |  CSS Pages | Result |
+| -----| -----------| ------ |
+| Home |   base.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   card-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   quiz-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |rock-paper-scissors.css | [No errors](README_files/CSS_Validator.png) |
 
 
 
 ### JavaScript validation
 
-Javascript code validation was complited on [jshint](https://jshint.com/)
-Initialy it was returning errors in relation of ES6 syntax, which was resolved by adding this line to the beggining of the file
-```
-/*jshint esversion: 6*/
-```
+Javascript code validation was complied on [jshint](https://jshint.com/)
 
-Second issue with jshint was that it wasn't recognizing syntax of JQuery. This was resolved by adding the below code:
-```
-/*globals $:false */
-```
-Most of the results came with no errors except of stripe_element.js It has returned that Stripe is undefined. This is due to core functionality reffering to Stripe. Copy of the code was taken from older version Stripe pages that were referenced in Butique Ado.
+None of the games returned any errors. See below for details.
 
 | App  |  file | result |
 | ------ | ------ | ------ |
-|  games | card_game | [no errors](README_files/???) |
-|  games | next_game | [no errors](README_files/???) |
-
+|  games | card-game | [no errors](README_files/jslint-card-game.png) |
+|  games | rock-paper-scissors | [no errors](README_files/jslint-rock-paper-scissors.png) |
+|  games | quiz-game | [no errors](README_files/jslint-quiz-game.png) |
+|  games | game-5 | [no errors](README_files/jslint-game5.png) |
+|  games | game-6 | [no errors](README_files/jslint-game6.png) |
 
 ### Python beautify
 All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Than the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
@@ -220,21 +251,114 @@ Automated tests have not been created due to time constrains of the project.
 
 ### Lighthouse
 
-
-
 ![lighthouse report](???)
 
 ### Manual tests
 
-List the manual tests performed
+Manual testing was performed by team members and below are all the manual tests performed on three of the games which details the test, expected outcome and result as well as user recommendation for some. This was used to improve the games where possible within the time constraint.
+
+ #### Rock, Paper, Scissors
+
+ #### Test 1
+   - Test: does the navigation work in the game?
+   - Expected outcome: all the navigation link will work
+   - Result:  the navigation worked well and it was easy to see when you won or lost the game. The rules were clear to
+
+#### Test 2
+   - Test : what happens if you win and lose the game?
+   - Expected outcome: 
+      - For when I win: There will be a display to show that i’ve won the game
+      - For when I lose: There will be a display to show me that i’ve lost. 
+   - Results: when I won I got a pop up telling me that I had won, when I lost I got a similar pop up telling me that the computer had won. It wasn’t very clear when I won rounds though. The text was displayed at the top. The styling of the button at the bottom also seemed to not be responsive to smaller devices 
+
+#### Test 3
+   - Test: The buttons work for rock, paper and scissors
+   - Expected results: The buttons will work correctly in the game
+   - Results: All three buttons worked correctly
+
+#### Card Game
+
+#### Test 1
+   - Test: All cards work correctly
+   - Expected result: All the cards can be clicked on in all difficulties
+   - Results: all the cards can be interacted with
+
+#### Test 2 
+   - Test: Does the navigation work as intended
+   - Expected outcome: all the buttons will work correctly
+   - Test results: the reset button works well resetting the game. The Moves: works well to track the number of moves the user makes. The easy medium and hard buttons work well changing the difficulty. I think that it would work better if these buttons didn’t reset progress when they’re clicked on though. Especially if someone was playing the game on their phone where it would be easier to miss click
+
+#### Test 3 
+   - Test: what happens if you get all of the matches? 
+   - Expected outcome: the user would get a message saying well done or something similar
+   - Test results: I wasn’t able to finish the game. None of the remaining colours matched. Also I was able to click on a card that i had previously turned over
+
+#### Test 4
+   - Test: Is the game responsive? 
+   - Expected result: the game will respond well on all devices
+   - Result: The game responded well on all devices. Both mobile and tablet
+
+#### Quizanaughts
+
+#### Test 1
+   - Test: do all of the colours display correctly when clicking throught the questions?
+   - Expected result: the right and wrong answers display in either green or red accordingly
+   - Result: the colours displayed correctly
+
+#### Test 2
+   - Test: does the score display a running total? Does the user get one point for a correct answer and zero points for a wrong answer?
+   - Expected results: the user will get a rolling total  score on the questions
+   - Result: the score adds up correctly, all correct answers add 1 point and incorrect answers add 0 points
+   - This was achieved by: I clicked through all the answers making sure that the total was correct when I scored on each questions, I did this multiple times on each question
+
+#### Test 3
+   - Test: what happens if you run out of time?
+   - Expected results:
+      - Timer goes to 0
+      - Pop up message displays telling  the user that they have run out of time and their score out of 15
+      - User can no longer select an answer
+      - User is taken to a navigation selection with options home and play again
+      - Running out of time resets the question number to 1
+  - Results:
+    - Timer goes to 0
+    - Pop up message displays telling the user that they have run out of time and thier score out of 15
+    - User can no longer select an answer
+    - User is taken to a navigation selection with options home and play again
+    - Running out of time resets the question number to 1
+- This was achieved by: I went through each individual question and waited for the timer to reach 0 seconds
+
+#### Test 4
+   - Test: what happens if you achieve the highest score and the lowest score?
+   - Expected outcome:
+     - Score= 15,0
+     - Congratulations message, try again message
+     - Navigation buttons work as expected 
+   - Test outcome:
+     - Score= 15, 0
+     - Congratulations message displays for 15 and 0. 
+     - Navigation buttons worked as expected 
+   - This was achieved by: I scored correctly on all the questions/ I scored 0 points on all the questions
+
+#### Test 5
+   - Test: the questions track correctly, displaying which question number the user is on?
+   - Expected result: the question number increases, resets and the progress bar increases
+   - Test result: the question number increases, resets and the progress bar increases, following the users progress
+   - This was achieved by: I went through the questions, reset the questionnaire(try again)
+
+#### Test 6
+   - Test: is the game resonive to all devices?
+   - Expected result: the game will be responsive
+   - Result: the game was responsive. However, on smaller screens the content seemed to align to the left or the screen
+
 
 ## Project Bugs and Solutions:
 
-list the bugs here
+- Responsiveness issues with Quizanaughts game on screen for mobiles at size 320px. This happened due to padding creating a scroll effect and the width size being set too wide for mobile at 400px. Once the width was changed and padding removed the game was fully responive on tablet and mobile.
 
 ## Bugs left in the project
 
-list the bugs here 
+- The pop-up message to the user when playing the game in Rock, Paper & Scissors is misplaced on smaller screens creating a bad user experience for the player when using it on small screens. Due to lack of time, this bug was left unfixed in the project.
+![Rock, Paper & Scissors Bug](README_files/bug-rock-papper.png) |
 
 ## Deployment and making a clone
 
@@ -242,14 +366,14 @@ list the bugs here
 
 **In your app** 
 
-1. add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
+1. Add the list of requirements by writing in the terminal "pip3 freeze --local > requirements.txt"
 2. Git add and git commit the changes made
 
 **Log into heroku**
 
 3. Log into [Heroku](https://dashboard.heroku.com/apps) or create a new account and log in
 
-4. top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
+4. Top right-hand corner click "New" and choose the option Create new app, if you are a new user, the "Create new app" button will appear in the middle of the screen
 
 5. Write app name - it has to be unique, it cannot be the same as this app
 6. Choose Region - I am in Europe
@@ -363,167 +487,8 @@ EMAIL_HOST_PASS is the password copied from above.
 EMAIL_HOST_USER is the gmail email address
 
 
-### Setting AWS bucket ??? remove if AWS wasn't used
-
-
-1. Go to [Amzon Web Services](https://aws.amazon.com/) page and login or register
-
-2. You should be redirected to AWS Managment Console, if not click onto AWS logo in top left corner or click Services icon and choose Console Home
-
-3. Below the header AWS Services click into All Services and find **S3** under Storage
-
-4. Create New Bucket using **Create Bucket** button in top right hand corner
-
-- **Configuration:** type in your chosen name for the bucket (preferably matching your heroku app name) and AWS Region closest to you
-
-
-- **Object ownership:** ACLs enabled, Bucket owner preffered
-
-- **Block Public Access settings:** Uncheck to allow public access, Acknowledge that the current settings will result that the objects within the bucket will become public
-
-- Click **Create Bucket**
-
-5. You are redirected to Amazon S3 with list of your buckets. Click into the name of the bucket you just created
-
-6. Find the tab **Properties** on the top of the page:
-**Static website hosting** at the bottom of the properties page: clik to edit, click enable, fill in index document: index.html and error.html for error
-
-7. On the **Permissions** tab:
-- Cross-origin resource sharing (**CORS**) Paste in the below code as configuration and save
-
-```
-[
-  {
-      "AllowedHeaders": [
-          "Authorization"
-      ],
-      "AllowedMethods": [
-          "GET"
-      ],
-      "AllowedOrigins": [
-          "*"
-      ],
-      "ExposeHeaders": []
-  }
-]
-```
-- **Bucket Policy** within permissions tab: Edit bucket policy
-Click AWS Policy Generator (top right conrner)
-
-Select type of policy: S3 Bucket policy
-Principal: * (allows all)
-Actions: Get object
-Amazon Resource Name (ARN): paste from the Edit bucket policy page in permissions
-Click Add statement Than Click Generate Policy and Copy the policy into bucket policy editor. 
-In the policy code find "Resource" key and add "/*" after the name of the bucket to enable all
-Save changes
-
-- **Access control list (ACL)** within permissions tab: click Edit
-
-find Everyone (public access) and check List box and save
-
-8. Identity and Access Management (IAM)
-Go back to the AWS Management Console and find IAM in AWS Services
-
-- side menu - User Groups and click **Create Group**
-name group "manage-your-app-name" and click Create group
-
-- side menu - Policies and click **Create Policy**
-Click import managed policy - find AmazonS3FullAccess
-Copy ARN again and paste into "Resource" add list containint two elements "[ "arn::..", ""arn::../*]" First element is for bucket itself, second element is for all files and foldrs in the bucket
-
-Click bottom right Add Tags, than Click bottom right Next: Review
-Add name of the policy and description
-
-Click bottom right Create policy
-
-9. Attach policy to the group we created:
-- go to User Groups on side menu
-- select your group from the list
-- go to permissions tab and add permissions drop down and choose **Attach policies**
-- find the policy created above and click button in bottom right Add permissions
-
-10. Create User to go in the group
-- **Users** in the side menu and click add users
-
-User name: your-app-staticfiles-user
-Check option: Access key - Programmatic access
-Click button at the bottom right for Next
-- Add user group and add user to the group you created earlier
-Click Next Tags and Next: review and Create user
-- Download .csv file
-
-
-11. Connect django to AWS S3 bucket
-- install boto3
-- install django-storages
-- freeze to requirements.txt
-- add storages to installed apps in settings.py
-
-```
-if 'USE_AWS' in os.environ:
-    # Cache control
-    AWS_S3_OBJECT_PARAMETERS = {
-        'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
-        'CacheControl': 'max-age=94608000',
-    }
-
-    # Bucket Config
-    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
-    AWS_S3_REGION_NAME = 'eu-west-2'
-    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
-    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-```
-
-12. Go to heroku to set up enviromental variables
-
-open CSV file downloaded earlier and copy each variable into heroku Settings
-
-AWS_STORAGE_BUCKET_NAME
-AWS_ACCESS_KEY_ID from csv
-AWS_SECRET_ACCESS_KEY from csv
-USE_AWS = True
-remove DISABLE_COLLECTSTATIC variable from heroku
-
-13. Create file in root directory custom_storages.py
-
-```
-from django.conf import settings
-from storages.backends.s3boto3 import S3Boto3Storage
-
-
-class StaticStorage(S3Boto3Storage):
-    location = settings.STATICFILES_LOCATION
-
-
-class MediaStorage(S3Boto3Storage):
-    location = settings.MEDIAFILES_LOCATION
-```
-
-14. Go to settings.py, add the AWS settings
-
-```
-    # Static and media files
-    STATICFILES_STORAGE = 'custom_storages.StaticStorage'
-    STATICFILES_LOCATION = 'static'
-    DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-
-    # Override static and media URLs in production
-    STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-```
-
-15. To load the media files to S3 bucket
-
-- Go to your S3 bucket page on AWS. Create new folder "media"
-- go to the media folder and click Upload
-
-
 ## Credits 
-### Online resources ??? check if needs to be added
+### Online resources
 * [Icons8](https://icons8.com/)
 * [unsplash](https://unsplash.com/)
 * [Fontawsome](https://fontawesome.com/)
@@ -532,8 +497,8 @@ class MediaStorage(S3Boto3Storage):
 * [Markdown Table of content generator](http://ecotrust-canada.github.io/markdown-toc/)
 
 * [icon](https://www.flaticon.com/free-icons/trees)
-* png to svg [converter](https://convertio.co/download/d39aa7f30e79f4379b9bce697c5afe384b5853/)
-* resizing photos by [photoresizer](https://www.photoresizer.com/)
+* PNG to SVG [converter](https://convertio.co/download/d39aa7f30e79f4379b9bce697c5afe384b5853/)
+* Resizing photos by [photoresizer](https://www.photoresizer.com/)
 * [Tetris Game by Rosetta Code](https://rosettacode.org/wiki/Tetris/JavaScript)
 * [Ping Pong Game By Code Explained](https://www.youtube.com/watch?v=nl0KXCa5pJk)
 
@@ -543,4 +508,12 @@ class MediaStorage(S3Boto3Storage):
 
 ### People
 
-- Sean for supporting our team as a facilitator
+Meet the team behind Plugged-in:
+- [Emanuel Silva](https://github.com/manni8436)
+- [Joanna Gorska](https://github.com/JoGorska)
+- [John Bachtiger](https://github.com/Jbachtiger)
+- [Sam Hulme](https://github.com/SamHulme1)
+- [Vanessa Anna-Maria Andersson](https://github.com/van-essa) 
+
+Also a big thank you to:
+- Sean Young for supporting our team as a facilitator
