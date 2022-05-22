@@ -55,17 +55,12 @@ Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=C
 
 ## Agile Methodology
 
-### Canban board and issues
+### Kanban board and issues
 
-![Screenshot of the canban board](README_files/???)
-
-
-Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](???). The issues are currently in two categories - done or for the next relese. 
-
-The issues were than closed automaticaly when the pull request was linked to the issue. 
+![Screenshot of the kanban board](README_files/kanban-board.png)
 
 
-
+Github issues were used to create the User stories and group them according to MoSCoW prioritization technique. Link to the project with live issues can be found [here](https://github.com/manni8436/stay-connected-hackathon/issues).
 
 
 ## Existing Features
