@@ -30,7 +30,7 @@ class CardGameView(LoginRequiredMixin, CreateView):
         if form.is_valid():
             score = form.save(commit=False)
             score.save()
-            
+
         else:
             return HttpResponseRedirect('/')
 
