@@ -18,7 +18,7 @@ UX Design is a process that can be used to design anything from products to bicy
 
 #### Flexibility and efficiency of use
 
-The aplication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+The application allows the users to tailor frequent actions by providing a simple and user friendly experience.
 
 #### Aesthetic and minimalist design
 
@@ -29,6 +29,7 @@ The application does not contain irrelevant or rarely needed information, follow
 [Code Institute](https://codeinstitute.net/se/) and [Trust in SODA](https://www.trustinsoda.com/) collaboratively organised the May Hackathon 2022 - "GETTING CONNECTED". The theme of the Hackathon was to highlight the importance of 'staying connected' with solutions to help people connect virtually for a more connected world.
 
 Plugged-in aims to 'stay connected' with friends and family members by playing simple javascript games and competing within the group.
+
 Get more people plugged into your group, play more games, to have immense competition on the games' scoreboards. 
 
 ## User Stories
@@ -76,7 +77,7 @@ Github issues were used to create the User stories and group them according to M
 ## Existing Features
 
 ### Navbar and Footer
-The Navbar and footer were created using bootstrap. They have been adjusted for the project. The Navbar features colours that make it clearly stand out on everypage. On smaller screens the Navbar responds by collapsing into a hamburger menu. The Navbar displays The logo for the poject(pluged-in) in the top left corner. The logo links back to the home page. Other parts of the Navbar include links to each game, the group dashboard and the login page. When a user navigates on a smaller device, the links contained in the hamburger and are displayed in drop down when the hamburger is clicked. The Navbar has been designed to make it easier for the user to navigate around the site. 
+The Navbar and footer were created using Bootstrap. They have been adjusted for the project. The Navbar features colours that make it clearly stand out on everypage. On smaller screens the Navbar responds by collapsing into a hamburger menu. The Navbar displays The logo for the poject(Plugged-in) in the top left corner. The logo links back to the home page. Other parts of the Navbar include links to each game, the group dashboard and the login page. When a user navigates on a smaller device, the links contained in the hamburger and are displayed in drop down when the hamburger is clicked. The Navbar has been designed to make it easier for the user to navigate around the site. 
 
 ![Navbar](README_files/navbar.png)
 ![Footer](README_files/footer.png)
@@ -98,8 +99,8 @@ The user's profile allows the user to track their scores inbetween games. This a
 
 
 ### Sign Up Page
-The user can create thier own profile by accessing the sign up link on the Sign up page. They are asked to submit their email, create a username. Then re-enter their password to confirm. The information is entered into a container in the middile of the page. If the user ends up on this page by accident. Then there is a 
-link asking them to sign up instead. The Sign Up page has been designed so that the user can quickly and easily create an account. 
+The user can create thier own profile by accessing the sign up link on the sign up page. They are asked to submit their email, create a username. Then re-enter their password to confirm. The information is entered into a container in the middile of the page. If the user ends up on this page by accident. Then there is a 
+link asking them to sign up instead. The sign up page has been designed so that the user can quickly and easily create an account. 
 
 ![Homepage](README_files/signup.png)
 
@@ -145,12 +146,12 @@ Tetris is a puzzle video game. In Tetris, players complete lines by moving diffe
 ![Tetris](/README_files/tetris.png)
 
 ## Future Features 
-- Add a multiplayer feature.
-Adding a multiplay feature to the games will allow the users to enjoy playing the games together and compete simultaneously. 
+- Add a multiplayer feature
+  - Adding a multiplayer feature to the games will allow the users to enjoy playing the games together and compete simultaneously 
 - Add co-op feature
-adding the co-op feature to the games will allow more users to participate in the same match and create different groups complete with each other.
+  - Adding the co-op feature to the games will allow more users to participate in the same match and create different groups to compete against each other
 - Add capturing images on canvas
-Adding the possibility to stick pictures to the canvas will make the user experience more engaging and interactive.
+   - Adding the possibility to stick pictures to the canvas will make the user experience more engaging and interactive
 
 
 ## Technologies Used
@@ -165,31 +166,31 @@ Adding the possibility to stick pictures to the canvas will make the user experi
    + Django
 
 ### Technologies and Programs Used:
-+ GitHub
-    The Git was used for version control
-    Git issues were used for user stories
-    GitPod was used as IDE to write the code and push to GitHub
-+ Heroku 
-    The page was deployed to Heroku
-+ PostgreSQL
-    PostgreSQL was used as database for this project
-+ AWS S3 bucket sstorage (check if AWS was used ???)
-    for storing static files and media files
+- GitHub
+  - The Git was used for version control
+  - Git issues were used for user stories
+  - GitPod was used as IDE to write the code and push to GitHub
+- Heroku 
+  - The page was deployed to Heroku
+- PostgreSQL
+  - PostgreSQL was used as database for this project
+- AWS S3 bucket sstorage (check if AWS was used ???)
+  - For storing static files and media files
 
  ### Frameworks Libraries and Programs Used
 
-+ Balsamiq:
-    Balsamiq was used to create the wireframes during the design process.
-+ Bootstrap 5:
-    Bootstrap was used to add style to the website.
-+ Bootstrap icons
-+ Django
+- Balsamiq:
+  - Balsamiq was used to create the wireframes during the design process.
+- Bootstrap 5:
+  - Bootstrap was used to add style to the website.
+- Bootstrap icons
+- Django
 
 ## Code Validation
 
 ### HTML beautify
 
-[online HTML code Beautifier](https://htmlbeautify.com/). 
+[Online HTML code Beautifier](https://htmlbeautify.com/). 
 
 ### HTML valiation
 
@@ -239,21 +240,7 @@ None of the games returned any errors. See below for details.
 |  games | game-6 | [no errors](README_files/jslint-game6.png) |
 
 ### Python beautify
-All pages were initialy put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automaticaly sorted most of the too long lines errors. Than the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code though pep8 validator.
-
-### Pep 8 
-
-```
-Python3 -m flake8
-```
-### Python validator
-
-
-| App name  |  file name | result |
-| ------ | ------ |------ |
-| home |  urls.py |  [all ok](README_files/???) |
-| games |  urls.py |  [all ok](README_files/???) |
-
+All pages were initially put through [Python Formatter](https://codebeautify.org/python-formatter-beautifier) which automatically sorted most of the too long lines errors. Then the code was checked by pylint and problems were displayed in the console. Once the issues were cleared I have put all code through pep8 validator.
 
 
 ## Tests
@@ -265,7 +252,7 @@ Automated tests have not been created due to time constrains of the project.
 
 ### Lighthouse
 
-![lighthouse report](???)
+![lighthouse report](README_files/lighthouse.png)
 
 ### Manual tests
 
