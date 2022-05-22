@@ -76,25 +76,26 @@ Github issues were used to create the User stories and group them according to M
 ## Existing Features
 
 ### Navbar and Footer
+The Navbar and footer were created using bootstrap. They have been adjusted for the project. The Navbar features colours that make it clearly stand out on everypage. On smaller screens the Navbar responds by collapsing into a hamburger menu. The Navbar displays The logo for the poject(pluged-in) in the top left corner. The logo links back to the home page. Other parts of the Navbar include links to each game, the group dashboard and the login page. When a user navigates on a smaller device, the links contained in the hamburger and are displayed in drop down when the hamburger is clicked. The Navbar has been designed to make it easier for the user to navigate around the site. 
 
-
-
-### Footer
-
-
+The Footer has been used to dispaly copyright information on behalf of the Plugged-in team. This is displayed across all pages. As the Footer has been designed to show the information of the websites creators, there isn't much user interaction with it other than links to the Plugged-in teams information. 
 
 
 ### Home - landing page
+The Homepage features a carasole, dispalying all the games on Plugged-in to the user. 
 
  
-
 ### Profile
+The user's profile allows the user to track their scores inbetween games. This adds a competive element to the game. And allows the user to see their scores/progress. This adds good user engagement to the site.  
 
-user's profile
+
+### Sign Up Page
+The user can create thier own profile by accessing the sign up link on the Sign up page. They are asked to submit their email, create a username. Then re-enter their password to confirm. The information is entered into a container in the middile of the page. If the user ends up on this page by accident. Then there is a 
+link asking them to sign up instead. The Sign Up page has been designed so that the user can quickly and easily create an account. 
 
 
-### Group Dashboard
-
+### Sign In Page 
+The user can sign into their account using this page. They are asked to enter their email/username and password. This information is entered in a container similar to in with the sign up page. There is also the link to the sign up page incase the user still needs to sign up. The Sign In page has been designed so that users can easily Sign In to their accounts and start playing games quickly.
 
 
 ### Games
