@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #ffb8d2;
+    background-color: #FEC5E5;
     color: #000;
     font-family: "Lobster", sans-serif;
     text-align: center;
@@ -36,23 +36,23 @@ html {
 .icons {
     margin-bottom: 2rem;
     animation: fadeIn ease 3s;
-    color: #000
+    color: #FFF
 }
 
 .fa-hand-rock {
-    background-color: #b7fdda;
+    background-color: #ff00c8;
     border-radius: 100%;
     padding: 5px;
 }
 
 .fa-hand-paper {
-    background-color: #fff5cc;
+    background-color: #ff00c8;
     border-radius: 100%;
     padding: 5px;
 }
 
 .fa-hand-scissors {
-    background-color: #cea4e4;
+    background-color: #ff00c8;
     border-radius: 100%;
     padding: 5px;
 }
@@ -83,18 +83,20 @@ ul li::before {
 }
 
 .btn {
+    padding: 1rem 2rem;
     font-size: 3rem;
     border: 1px solid #FFF;
+    margin-bottom: 3rem;
 }
 
 #start:hover {
     background-color: #FFF;
-    color: #ffb8d2;
+    color: #FEC5E5;
 }
 
 #start {
     background-color: #FFF;
-    color: #ffb8d2;
+    color: #FEC5E5;
     font-family: "Lobster", sans-serif;
 }
 
@@ -123,12 +125,12 @@ ul li::before {
 .controls {
     display: none;
     /* Hide controls by default */
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    font-size: 1rem;
-    position: relative;
-    top: -7rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
     left: 0;
     right: 0;
 }
@@ -145,14 +147,20 @@ ul li::before {
     font-size: 2rem;
 }
 
+.players {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
 .players span {
     font-size: 1.3rem;
 }
 
 .player,
 .computer {
-    /* flex: 50%; */
-    /* margin: 8rem; */
+    flex: 50%;
+    margin: 8rem;
     border: 4px solid #000;
     background-color: #fff;
     padding: 1rem 0;
@@ -210,13 +218,13 @@ ul li::before {
 
 .modal-content {
     position: relative;
-    background-color: #b7fdda;
+    background-color: #ff00c8;
     text-align: center;
     color: black;
-    margin: 50% auto;
+    margin: 15% auto;
     padding: 3rem;
     border: 3px solid white;
-    width: 90%;
+    width: 80%;
 }
 
 .close {
@@ -229,7 +237,7 @@ ul li::before {
 }
 
 .close:hover {
-    color: #fff5cc;
+    color: #f1d68b;
     cursor: pointer;
 }
 
@@ -255,7 +263,7 @@ ul li::before {
     }
 
     .controls {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .game-area {

@@ -10,3 +10,10 @@ form label:not([for='id_remember']) {
 form input:not([type='checkbox']) {
     margin-top: 1.5rem; /* mt-4 */
 }
+
+.login-background{
+    background-color: #95b8d1;
+    border-radius: 20px;
+    width:fit-content;
+    padding: 20px;
+}
