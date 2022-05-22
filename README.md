@@ -7,7 +7,7 @@ DON'T FORGET TO GENERATE THE TABLE OF CONTENT -
 # HACKATHON MAY 2022: GETTING CONNECTED
 # Plugged-in Application
 
-[![showpiece home page](README_files)](https://?????.herokuapp.com/)
+![Quizanaughts](/README_files/website-mockups.png)
 
 Click [here](https://plugged-in1.herokuapp.com/) to live site.  
 ------
