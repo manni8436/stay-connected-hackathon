@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- Content Goes here -->
+<h1>
+  <center>Tetris
+  </center>
+</h1>
+<style>
+  body{
+    background-color: #fff5cc;
+  }
+  canvas {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    width: 640px;
+    height: 640px;
+    margin: -320px 0 0 -320px;
+  }
+</style>
+<canvas></canvas>
+
+{% endblock %}
+
+{% block postload_js %}
+
+<script src="{% static 'js/game-6.js' %}"></script>
+{% endblock %}
