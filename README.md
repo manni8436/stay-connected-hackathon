@@ -39,10 +39,19 @@ Get more people plugged in to your group to have bigger competition in the games
 
 ## Wireframes 
 
-The general structure of the page was based on 1/3 proportions in many of it's features. Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB).
+Wireframes were created with [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQiAubmPBhCyARIsAJWNpiMYzrk_0rLzl3vgYKRLXwnX7rpqyQiUFdyt3xHGpRiHlZlozwO_pvcaAvUFEALw_wcB). This provided us a rough starting point to establish what we were going to put into the project and the direction to take. The end result has evolved multiple times from this inital concept.
 
-The whole of design has been saved in this [pdf file](????). 
+- [Homepage - Desktop](/README_files/homepage-desktop.png)
+- [Homepage - Tablet](/README_files/homepage-tablet.png)
+- [Homepage - Mobile](/README_files/homepage-mobile.png)
 
+- [Game Page - Desktop](/README_files/game-page-desktop.png)
+- [Game Page - Tablet](/README_files/game-page-tablet.png)
+- [Game Page - Mobile](/README_files/game-page-mobile.png)
+
+- [Homepage - Desktop](/README_files/connect-with-us-desktop.png)
+- [Homepage - Tablet](/README_files/connect-with-us-tablet.png)
+- [Homepage - Mobile](/README_files/connect-with-us-mobile.png)
 
 ## Agile Methodology
 
