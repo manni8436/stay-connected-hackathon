@@ -264,19 +264,14 @@ Manual testing was performed by team members and below are all the manual tests 
    - Expected outcome: all the navigation link will work
    - Result:  the navigation worked well and it was easy to see when you won or lost the game. The rules were clear to
 
-#### Test 2 
-   - Test: does the mute volume button work at the top of the page?
-   - Expected outcome: the mute volume button will work 
-   - Result: when I clicked on the button I could interact with it. However, I could’t hear any difference from when it was muted and when it wasn’t muted
-
-#### Test 3
+#### Test 2
    - Test : what happens if you win and lose the game?
    - Expected outcome: 
       - For when I win: There will be a display to show that i’ve won the game
       - For when I lose: There will be a display to show me that i’ve lost. 
    - Results: when I won I got a pop up telling me that I had won, when I lost I got a similar pop up telling me that the computer had won. It wasn’t very clear when I won rounds though. The text was displayed at the top. The styling of the button at the bottom also seemed to not be responsive to smaller devices 
 
-#### Test 4
+#### Test 3
    - Test: The buttons work for rock, paper and scissors
    - Expected results: The buttons will work correctly in the game
    - Results: All three buttons worked correctly
