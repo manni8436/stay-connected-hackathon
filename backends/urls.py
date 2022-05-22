@@ -24,6 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.get_index, name='home'),
     path('accounts/', include('allauth.urls')),
+    path('profile/', include('profiles.urls')),
     path('dashboard/', views.get_group_dashboard, name='group_dashboard'),
     path('games/card_game/', views.get_card_game, name='card_game'),
     path('games/rock_paper_scissors/', views.get_rock_paper_scissors,
