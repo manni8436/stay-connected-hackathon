@@ -16,10 +16,12 @@ Click [here](https://????.herokuapp.com/) to live site.
 
 UX Design is a process that can be used to design anything from products to bicycles to mobile applications. The focus of this design process puts the users' needs first--making their interaction with the application a pleasureable one.
 
-Flexibility and efficiency of use
-The apllication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+#### Flexibility and efficiency of use
 
-Aesthetic and minimalist design
+The aplication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+
+#### Aesthetic and minimalist design
+
 The application does not contain irrelevant or rarely needed information, following a minimal design with pastel colours to make the aesthetic experience playful. The user has clear visibility of the application's information and usage.
 
 ## Purpose
@@ -34,15 +36,15 @@ Get more people plugged into your group, play more games, to have immense compet
 ### User Stories that have been satisfied by creation of particular apps in ths project:
 
 | id  |  content |
-| ------ | ------ | ------ |
-| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
+| ------ | ------ |
+|[#31](https://github.com/manni8436/stay-connected-hackathon/issues/31)| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
 
 
 ### User stories that are planned for next sprint
 
 | id  |  content | 
 | ------ | ------ |
-| As a Player, I can play co-op games with family and friends and score up together |
+|[#32](https://github.com/manni8436/stay-connected-hackathon/issues/32)| As a Player, I can play co-op games with family and friends and score up together |
 
 
 ## Wireframes 
@@ -96,22 +98,45 @@ user's profile
 
 
 ### Games
-describe general theme of games - they come from project from each participant
+The games in this application are simple JavaScript games aiming to provide a playful and fun user experience to the players. Canvas, Card Game, Quiz Game, and the Rock, Paper & Scissors are games from previous projects from Code Institute's students. Tetris and Ping Pong were implemented from external sources mentioned in the credits.
 
 #### Cards game
-describe game
-#### Canvas
+The game is a take on the classic card game Snap. The game is aimed at all ages and genders. It features an Egyptian theme which can be enjoyed by all audiences. In particular, those with an interest in games and Egyptian Mythology.  The game aims to provide the user with an easy to use layout, easy to read instructions, and responsive feedback when selecting cards. Allowing the user to make the right selection. 
 
-describe game
+![Card Game](/README_files/cardgame.png)
 
 #### Rock Paper Scizors
-describe game
-#### Quizz
-describe game
+This game is a take on the classic: Rock, Paper, Scissors. It was built using HTML, CSS and JavaScript. To interact with the game, the user will need to select either. Rock, Paper or Scissors. They will play against the computer. Whoever reaches 3 points first wins the game. This game is aimed at all ages and aims to provide a quick fun experience.
+
+![Rock Paper Scizors](/README_files/rockgame.png)
+
+#### Quiz Game
+Quizanaughts is a fun, interactive quiz. Aimed at older children between the ages of 9-13. The quiz aims to help educate younger audiences on space. The quiz covers a wide variety of space-related questions that help the user test their knowledge. The user can see how well they score via a scoring system. A timer has also been included to make the game more challenging. Both the timer and the scoring system helps to make the game more competitive. The quiz is a great educational tool and helps to create an awareness of space and learn about the history of space in younger generations.
+
+![Rock Paper Scizors](/README_files/quizgame.png)
+
+#### Canvas
+Canvas is a web-based painting page where users can use their creativity by painting and adding comments to the screen by using the mouse. 
+
+![canvas](/README_files/canvas.png)
+
+### Ping Pong
+Ping Pong, also known as table tennis, is a game in which two hit a little light ball back and forth across a table using a small paddle. The player plays against the computer, and the paddle is moved by using the mouse. A point is scored when a player fails to return the ball to the other player.
+
+![Ping Pong](/README_files/pingpong.png)
+
+### Tetris
+Tetris is a puzzle video game. In Tetris, players complete lines by moving differently shaped pieces, which descend onto the playing field. The completed lines disappear and grant the player points, and the player can proceed to fill the vacated spaces. The game ends when the playing field is filled. The longer the player can delay this outcome, the higher their score will be. 
+
+![Tetris](/README_files/tetris.png)
+
 ## Future Features 
-
-write how the app can be expanded
-
+- Add a multiplayer feature.
+Adding a multiplay feature to the games will allow the users to enjoy playing the games together and compete simultaneously. 
+- Add co-op feature
+adding the co-op feature to the games will allow more users to participate in the same match and create different groups complete with each other.
+- Add capturing images on canvas
+Adding the possibility to stick pictures to the canvas will make the user experience more engaging and interactive.
 
 
 ## Technologies Used
@@ -150,26 +175,38 @@ write how the app can be expanded
 
 ### HTML beautify
 
- [online HTML code Beautifier](https://htmlbeautify.com/). 
+[online HTML code Beautifier](https://htmlbeautify.com/). 
 
 ### HTML valiation
 
 [HTML validator](https://validator.w3.org/nu/#textarea)
 
 
-| App  |  page | result |
-| ------ | ------ | ------ |
-|  Home | Home | [No errors](README_files/???) |
+| App  |  Pages | Result |
+| -----| -----------| ------ |
+| Home |   base.html | [No errors](README_files/htmlok.png) |
+| Dashboard |   group-dashboard.html | [No errors](README_files/htmlok.png) |
+| Game |   card-game.html | [No errors](README_files/htmlok.png) |
+| Game |rock-paper-scissors.html| [No errors](README_files/htmlok.png) |
+| Game |quiz-game-home.html | [No errors](README_files/htmlok.png) |
+| Game |quiz-game.html | [No errors](README_files/htmlok.png) |
+| Game |canvas-art.html | [No errors](README_files/htmlok.png) |
+| Game |game-5.html | [No errors](README_files/htmlok.png) |
+| Login |game-6.html | [No errors](README_files/htmlok.png) |
 
 
 
 ### CSS validation
 
-Due to extensive user of Bottstrap classes, only minimial styling was applied. Most of the css code comes from bootstrap's carousele template with some modifications. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
+Due to extensive user of Bootstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from Bootstrap's carousel template with some modifications. 
+The styling to the games was created with CSS code. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
 
-| App  |  file | result |
-| ------ | ------ | ------ |
-|  home | base.css | [No errors](README_files/???) |
+| App  |  CSS Pages | Result |
+| -----| -----------| ------ |
+| Home |   base.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   card-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   quiz-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |rock-paper-scissors.css | [No errors](README_files/CSS_Validator.png) |
 
 
 
@@ -228,7 +265,8 @@ list the bugs here
 
 ## Bugs left in the project
 
-list the bugs here 
+The pop-up message to the user when playing the game in Rock, Paper & Scissors is misplaced on smaller screens creating a bad user experience for the player when using it on small screens. Due to lack of time, this bug was left unfixed in the project.
+![Rock, Paper & Scissors Bug](README_files/bug-rock-papper.png) |
 
 ## Deployment and making a clone
 
