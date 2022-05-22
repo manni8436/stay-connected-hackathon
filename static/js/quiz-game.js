@@ -360,9 +360,10 @@ question.answers.forEach((answer) => {
 /**
 * Increments score
 */
+
 function incrementScore() {
-score++;
-totalCorrectAnswersText.innerText = `Score ${score}`;
+    score++;
+    totalCorrectAnswersText.innerText = `Score ${score}`;
 }
 
 /**
