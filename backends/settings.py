@@ -31,7 +31,7 @@ DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 DEBUG = DEVELOPMENT
 
-# TODO please remove heroku app from development when finished project
+# TODO please uncomment Manni's settings, before pushing
 # if DEVELOPMENT:
 #     ALLOWED_HOSTS = ['localhost', '127.0.0.1', '127.0.0.1:8000', "plugged-in1.herokuapp.com"]
 # else:
@@ -186,7 +186,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
