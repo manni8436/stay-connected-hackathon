@@ -264,11 +264,6 @@ Manual testing was performed by team members and below are all the manual tests 
    - Expected outcome: all the navigation link will work
    - Result:  the navigation worked well and it was easy to see when you won or lost the game. The rules were clear to
 
-#### Test 2 
-   - Test: does the mute volume button work at the top of the page?
-   - Expected outcome: the mute volume button will work 
-   - Result: when I clicked on the button I could interact with it. However, I could’t hear any difference from when it was muted and when it wasn’t muted
-
 #### Test 3
    - Test : what happens if you win and lose the game?
    - Expected outcome: 
