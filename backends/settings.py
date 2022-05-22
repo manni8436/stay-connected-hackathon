@@ -15,6 +15,7 @@ import dj_database_url
 if os.path.isfile("env.py"):
     import env  # noqa # pylint: disable=unused-import
 
+# test
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -122,7 +123,7 @@ SITE_ID = 1
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = False
 ACCOUNT_SERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
