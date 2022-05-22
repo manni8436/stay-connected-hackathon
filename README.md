@@ -18,7 +18,7 @@ UX Design is a process that can be used to design anything from products to bicy
 
 #### Flexibility and efficiency of use
 
-The apllication allow the users to tailor frequent actions by providing a simple and user friendly experience.
+The aplication allow the users to tailor frequent actions by providing a simple and user friendly experience.
 
 #### Aesthetic and minimalist design
 
@@ -167,12 +167,15 @@ write how the app can be expanded
 
 ### CSS validation
 
-Due to extensive user of Bottstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from bootstrap's carousele template with some modifications. 
+Due to extensive user of Bootstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from Bootstrap's carousel template with some modifications. 
 The styling to the games was created with CSS code. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
 
-| App  |  CSS Games | Result |
-| ------ | ------ | ------ |
-|  Home | All | [No errors](README_files/CSS_Validator.png) |
+| App  |  CSS Pages | Result |
+| -----| -----------| ------ |
+| Home |   base.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   card-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |   quiz-game.css | [No errors](README_files/CSS_Validator.png) |
+| Game |rock-paper-scissors.css | [No errors](README_files/CSS_Validator.png) |
 
 
 
