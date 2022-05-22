@@ -161,9 +161,8 @@ function pushMoves() {
     document.getElementById("moves").value = j - 1
 }
 
-// switch off the restet game and let django reset the game by reloading url after form submittions
-// let resetButton = document.getElementById("reset");
-// resetButton.addEventListener("click", resetGame);
+let resetButton = document.getElementById("reset");
+resetButton.addEventListener("click", resetGame);
 
 function resetGame() {
     j = 1;

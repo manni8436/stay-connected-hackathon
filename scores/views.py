@@ -1,11 +1,15 @@
+'''views to display games and scores'''
+# pylint: disable=no-member
 from django.shortcuts import render
 from django.views import generic, View
 from django.views.generic.edit import CreateView
 from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import CardGameForm
+from .models import CardGameScore
 
 
-class CardGameView(CreateView):
+class CardGameView(LoginRequiredMixin, CreateView):
     '''
     class view in get - gets the traffic_msg_form and in post - posts the form
     and creates new traffic alert
@@ -23,12 +27,28 @@ class CardGameView(CreateView):
         form.instance.player = request.user
 
         if form.is_valid():
-            new_score = form.save()
-
-            print(f'NEW SCORE {new_score}')
+            form.save()
             return HttpResponseRedirect('/')
 
         else:
             return HttpResponseRedirect('/')
 
         return HttpResponseRedirect('/')
+
+
+class CardGameEasyScoresView(LoginRequiredMixin, generic.ListView):
+    '''
+    view to display list of scores
+    '''
+    # TODO add filter by the team, once teams are created
+    # def get_queryset(self):
+    #     queryset = super(ScoresListView, self).get_queryset()
+
+    #     queryset = (
+    #         CardGameScore.objects
+    #         .filter(player=self.request.user))
+    #     return queryset
+    quesryset = CardGameScore.objects.filter(level='easy')
+    model = CardGameScore
+    template_name = 'scores/card_game_scores.html'
+    paginate_by = 6

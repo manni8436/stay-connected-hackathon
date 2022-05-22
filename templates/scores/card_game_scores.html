@@ -1,0 +1,90 @@
+
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- icon for checked mark -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check" viewBox="0 0 16 16">
+    <title>Check
+    </title>
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+</svg>
+<!-- containers start here -->
+<div>
+  <div class="page-overlay d-flex justify-content-center align-items-center">
+    <div class="container options-container p-5">
+      <!-- main header -->
+      <h2 class="display-6 text-center mt-5 mb-1 pt-5">Card Game Scores
+      </h2>
+      <div class="mb-5 text-center">
+        <a href="{% url 'card_game_easy' %}"
+        class="
+        {% if request.resolver_match.url_name == 'card_game_easy' %}
+        btn btn-secondary
+        {% else %}
+        btn btn-outline-secondary
+        {% endif %}
+        ">Easy</a>
+        <a href="{% url 'card_game_easy' %}"
+        class="
+        {% if request.resolver_match.url_name == 'card_game_easy' %}
+        btn btn-secondary
+        {% else %}
+        btn btn-outline-secondary
+        {% endif %}
+        ">Medium</a>
+        <a href="{% url 'card_game_easy' %}"
+        class="
+        {% if request.resolver_match.url_name == 'card_game_easy' %}
+        btn btn-secondary
+        {% else %}
+        btn btn-outline-secondary
+        {% endif %}
+        ">Hard</a>
+      </div>
+      <div class="table-responsive mb-5">
+        <table class="table text-center">
+          <thead>
+            <!--Table row - headers-->
+            <tr>
+              <th style="width: 20%;">Player
+              </th>
+              <th style="width: 10%;">Moves
+              </th>
+              <th style="width: 70%;">Scored on
+              </th>
+            </tr>
+          </thead>
+          <!--Table body-->
+          <tbody>
+              <!-- this is one row -->
+              {% if cardgamescore_list %}
+              {% for score in cardgamescore_list %}
+            <tr>
+              <th scope="row" >{{ score.player }}
+              </th>
+              <td>
+                {{ score.moves }}
+              </td>
+              <td>
+                {{ score.scored_on }}
+              </td>
+
+            </tr>
+            {% endfor %}
+           {% endif %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+{% block postload_js %}
+{% endblock %}

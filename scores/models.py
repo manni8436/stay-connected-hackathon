@@ -23,4 +23,4 @@ class CardGameScore(models.Model):
         ordering = ['-moves']
 
     def __str__(self):
-        return f'{self.user.username} {self.level} {self.moves}'
+        return f'{self.player.username} {self.level} {self.moves}'

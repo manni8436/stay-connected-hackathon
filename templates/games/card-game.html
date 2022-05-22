@@ -131,17 +131,17 @@
     <div class="modal-content">
         <p>you have found all the cards!, Would you like to play again?</p>
     </div>
-
-    <button type="button" class="modal-close-button" id="close">close</button>
-    <button type="submit" class="modal-replay-button" id="submit">replay</button>
-
+    <form action="{% url 'card_game' %}" method="POST">
+    {% csrf_token %}
+        <input type="hidden" name="moves" id="moves">
+        <input type="hidden" name="level" value="easy" id="level">
+        <input type="hidden" name="team" value="unknown_team">
+        <button type="button" class="modal-close-button" id="close">close</button>
+        <button type="button" class="modal-replay-button" id="replay">replay</button>
+        <button type="submit" class="modal-submit-button" >scores</button>
+    
+    </form>
 </div>
-<form action="">
-<input type="text" name="moves" id="moves">
-<input type="text" name="level" value="medium" id="level">
-<input type="text" name="team" value="unknown_team">
-<button type="submit">submit</button>
-</form>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
