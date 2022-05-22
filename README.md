@@ -16,10 +16,12 @@ Click [here](https://????.herokuapp.com/) to live site.
 
 UX Design is a process that can be used to design anything from products to bicycles to mobile applications. The focus of this design process puts the users' needs first--making their interaction with the application a pleasureable one.
 
-Flexibility and efficiency of use
+#### Flexibility and efficiency of use
+
 The apllication allow the users to tailor frequent actions by providing a simple and user friendly experience.
 
-Aesthetic and minimalist design
+#### Aesthetic and minimalist design
+
 The application does not contain irrelevant or rarely needed information, following a minimal design with pastel colours to make the aesthetic experience playful. The user has clear visibility of the application's information and usage.
 
 ## Purpose
@@ -34,15 +36,15 @@ Get more people plugged into your group, play more games, to have immense compet
 ### User Stories that have been satisfied by creation of particular apps in ths project:
 
 | id  |  content |
-| ------ | ------ | ------ |
-| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
+| ------ | ------ |
+|[#31](https://github.com/manni8436/stay-connected-hackathon/issues/31)| As a Player, I can register as a user and have the ability to log in so that my score is saved and connect with family and friends |
 
 
 ### User stories that are planned for next sprint
 
 | id  |  content | 
 | ------ | ------ |
-| As a Player, I can play co-op games with family and friends and score up together |
+|[#32](https://github.com/manni8436/stay-connected-hackathon/issues/32)| As a Player, I can play co-op games with family and friends and score up together |
 
 
 ## Wireframes 
@@ -146,26 +148,27 @@ write how the app can be expanded
 
 ### HTML beautify
 
- [online HTML code Beautifier](https://htmlbeautify.com/). 
+[online HTML code Beautifier](https://htmlbeautify.com/). 
 
 ### HTML valiation
 
 [HTML validator](https://validator.w3.org/nu/#textarea)
 
 
-| App  |  page | result |
+| App  |  Pages | Result |
 | ------ | ------ | ------ |
-|  Home | Home | [No errors](README_files/???) |
+|  Home | All | [No errors](README_files/???) |
 
 
 
 ### CSS validation
 
-Due to extensive user of Bottstrap classes, only minimial styling was applied. Most of the css code comes from bootstrap's carousele template with some modifications. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
+Due to extensive user of Bottstrap classes, only minimial styling was applied to the Home Page. Most of the CSS code comes from bootstrap's carousele template with some modifications. 
+The styling to the games was created with CSS code. The CSS code was validated with [Jigsaw Validator](https://jigsaw.w3.org/css-validator/) 
 
-| App  |  file | result |
+| App  |  CSS Games | Result |
 | ------ | ------ | ------ |
-|  home | base.css | [No errors](README_files/???) |
+|  Home | All | [No errors](README_files/CSS_Validator.png) |
 
 
 

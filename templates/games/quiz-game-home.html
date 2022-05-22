@@ -3,58 +3,57 @@
 {% block extra_css %}
 <link rel="stylesheet" href="{% static '/css/quiz-game.css' %}">
 {% endblock %}
-
 {% block content %}
 <!-- Content Goes here -->
-
 <!-- Quiz title -->
 <div>
-    <header>
-        <h1>Quizanaughts!</h1>
-    </header>
-    <!-- Quiz questions and answers -->
-    <div class="quiz-container">
-        <div id="welcome">
-            <h2 id="welcome-heading">Are you ready space adventurers?</h2>
-            <p id="welcome-intro"></p>
-        </div>
-        <div class="menu-controls">
-            <button aria-label="Begin Quiz" id="start-btn" class="homepage-btn btn">Begin Quiz</button>
-            <div class="m-4">
-                <!-- Button HTML (to Trigger Modal) -->
-                <a href="#myModal" role="button" class="btn modal-btn" data-bs-toggle="modal">How To Play</a>
-
-                <!-- Modal HTML -->
-                <div id="myModal" class="modal fade" tabindex="-1">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Game Rules</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body">
-                                <p>Get ready Quizanaughts for a fun filled quiz all about space. Simply click on the
-                                    question you think is right and test your space knowledge. The more questions you
-                                    get right the more points you gain. Get yourself
-                                    ready and blast off into space to find the answers you've been looking for.</p>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <header>
+    <h1>Quizanaughts!
+    </h1>
+  </header>
+  <!-- Quiz questions and answers -->
+  <div class="quiz-container">
+    <div id="welcome">
+      <h2 id="welcome-heading">Are you ready space adventurers?
+      </h2>
+      <p id="welcome-intro">
+      </p>
+    </div>
+    <div class="menu-controls">
+      <button aria-label="Begin Quiz" id="start-btn" class="homepage-btn btn">Begin Quiz
+      </button>
+      <div class="m-4">
+        <!-- Button HTML (to Trigger Modal) -->
+        <a href="#myModal" role="button" class="btn modal-btn" data-bs-toggle="modal">How To Play
+        </a>
+        <!-- Modal HTML -->
+        <div id="myModal" class="modal fade" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Game Rules
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Get ready Quizanaughts for a fun filled quiz all about space. Simply click on the
+                  question you think is right and test your space knowledge. The more questions you
+                  get right the more points you gain. Get yourself
+                  ready and blast off into space to find the answers you've been looking for.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn" data-bs-dismiss="modal">Close
+                </button>
+              </div>
             </div>
-
+          </div>
         </div>
-
-
-
-        {% endblock content %}
-
-
-        {% block postload_js %}
-
-        <script src="{% static '/js/quiz-game-menu.js' %}"></script>
-        {% endblock %}
+      </div>
+    </div>
+    {% endblock content %}
+    {% block postload_js %}
+    <script src="{% static '/js/quiz-game-menu.js' %}">
+    </script>
+    {% endblock %}
