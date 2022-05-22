@@ -60,7 +60,8 @@ h1 {
 }
 
 .modal-close-button,
-.modal-replay-button {
+.modal-replay-button,
+.modal-submit-button {
     background-color: #ff9a18;
     color: #202020;
     margin: auto;
