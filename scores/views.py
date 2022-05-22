@@ -42,14 +42,10 @@ class CardGameEasyScoresView(LoginRequiredMixin, generic.ListView):
     view to display list of scores for Easy level
     '''
     # TODO add filter by the team, once teams are created
-    # def get_queryset(self):
-    #     queryset = super(ScoresListView, self).get_queryset()
-
-    #     queryset = (
-    #         CardGameScore.objects
-    #         .filter(player=self.request.user))
-    #     return queryset
-    quesryset = CardGameScore.objects.filter(level='easy')
+    def get_queryset(self):
+        queryset = super(CardGameEasyScoresView, self).get_queryset()
+        queryset = CardGameScore.objects.filter(level='easy')
+        return queryset
     model = CardGameScore
     template_name = 'scores/card_game_scores.html'
     paginate_by = 6
@@ -59,7 +55,10 @@ class CardGameMediumScoresView(LoginRequiredMixin, generic.ListView):
     '''
     view to display list of scores for Medium level
     '''
-    quesryset = CardGameScore.objects.filter(level='medium')
+    def get_queryset(self):
+        queryset = super(CardGameMediumScoresView, self).get_queryset()
+        queryset = CardGameScore.objects.filter(level='medium')
+        return queryset
     model = CardGameScore
     template_name = 'scores/card_game_scores.html'
     paginate_by = 6
@@ -69,7 +68,10 @@ class CardGameHardScoresView(LoginRequiredMixin, generic.ListView):
     '''
     view to display list of scores for Hard level
     '''
-    quesryset = CardGameScore.objects.filter(level='hard')
+    def get_queryset(self):
+        queryset = super(CardGameHardScoresView, self).get_queryset()
+        queryset = CardGameScore.objects.filter(level='hard')
+        return queryset
     model = CardGameScore
     template_name = 'scores/card_game_scores.html'
     paginate_by = 6
